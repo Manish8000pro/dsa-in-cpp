@@ -2,27 +2,48 @@
 using namespace std;
 int main()
 {
-    int num;
-    cout<<"Enter number:- ";
-    cin>>num;
+   int row,col,n;
 
-    if (num==1)
-    cout<<"Mon";
-    else if (num==2)
-    cout<<"Tue";
-    else if (num==3)
-    cout<<"Wed";
-    else if (num==4)
-    cout<<"Thu";
-    else if (num==5)
-    cout<<"Fri";
-    else if (num==6)
-    cout<<"Sat";
-    else if (num==7)
-    cout<<"Sun";
-    else 
+   cout<<"Enter the input ";
+   cin>>n;
+   
+    for(row=n;row>=1;row=row-1)
+   
     {
-       cout<<"Enter valid number "; 
+        for(col=1;col<=row;col=col+1)
+
+        cout<<"* ";
+
+        for(col=1;col<=2*n-2*row;col=col+1)
+
+        cout<<"  ";
+
+        for(col=1;col<=row;col=col+1)
+
+        cout<<"* ";
+
+        cout<<endl;
+
+
     }
   
+    for(row=1;row<=n;row=row+1)
+   
+    {
+        for(col=1;col<=row;col=col+1)
+
+        cout<<"* ";
+
+        for(col=1;col<=2*n-2*row;col=col+1)
+
+        cout<<"  ";
+
+        for(col=1;col<=row;col=col+1)
+
+        cout<<"* ";
+
+        cout<<endl;
+
+
+    }
 }
