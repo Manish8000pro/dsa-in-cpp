@@ -22,7 +22,7 @@ int main()
     cout<<"Sun";
     else 
     {
-       cout<<"Enter valid number"; 
+       cout<<"Enter valid number "; 
     }
   
 }
