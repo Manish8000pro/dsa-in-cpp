@@ -6,7 +6,7 @@ int main()
     cout<<"Enter the input";
     cin>>n;
     for(row=1;row<=n;row=row+1)
-    {
+    {   //print star
         for(col=1;col<=row;col=col+1)
         cout<<"* ";
 
