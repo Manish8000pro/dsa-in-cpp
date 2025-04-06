@@ -15,12 +15,16 @@ int main()
     //or
 
     
-    char name='a';
+    // char name='a';
 
-    if(name=='a'|| name=='e'|| name=='i'|| name=='o'|| name=='u')
-    cout<<"vovel";
-    else
-    cout<<"consonant";
+    // if(name=='a'|| name=='e'|| name=='i'|| name=='o'|| name=='u')
+    // cout<<"vovel";
+    // else
+    // cout<<"consonant";
+
+    //not  ! oprator
+
+    cout<<!00;
     
     
 }
