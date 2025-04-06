@@ -14,6 +14,6 @@ int main()
     // ex-or oprator
 
     int ans=2^3;
-    cout<<"my ans is "<<ans<<endl;
+    cout<<"my ans is " <<ans<<endl;
 
 }
