@@ -11,9 +11,16 @@ int main()
     // cout<<"yes";
     // else
     // cout<<"NO;
+
     //or
 
     
+    char name='a';
+
+    if(name=='a'|| name=='e'|| name=='i'|| name=='o'|| name=='u')
+    cout<<"vovel";
+    else
+    cout<<"consonant";
     
     
 }
