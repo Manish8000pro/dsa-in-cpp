@@ -16,7 +16,7 @@ int main()
     // int ans=2^3;
     // cout<<"my ans is " <<ans<<endl;
     
-    //~ compliment oprator
+    //~ compliment oprator //~~
 
     int ans=~10;
     cout<<"my ans is "<<ans<<endl;
