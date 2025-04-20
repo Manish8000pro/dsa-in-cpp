@@ -27,6 +27,15 @@ int main()
     cin>>i;
     switch(i)
     case 1:
+    cout<<"Rohit";
+    break;
+
+    case 2:
+    cout<<"Mohit";
+    break;
+
+    case 3:
+    cout<<"Sohit";
     
 
 }
