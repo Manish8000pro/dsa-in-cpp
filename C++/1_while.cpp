@@ -29,11 +29,11 @@ int main()
    int n;
    cout<<"Enter the number ";
    cin>>n;
-   int i=1;
-   while(i<=n)
+   int i=1; //inilitze
+   while(i<=n) //break
    {
     if(n%i==0)
     cout<<i<<endl;
-    i++;
+    i++; //update
    }
 }
