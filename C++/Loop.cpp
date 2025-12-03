@@ -1,30 +1,44 @@
-#include<iostream>
-using namespace std; 
-int main()
 
-{
-   // int n;
+    //int package;
+   // cin>>package;
+
+   // if(package>10)
    // {
-      //  cout<<"Enter number ";
+   //     cout<<"Accepted";
   //  }
-    
-   // cin>>n;
-
-   // for (int count=1;count<=n;count=count+1)
-    
+   // else
    // {
-        //cout<<count<<endl;
-   // }
-   int n;
-   
+  //      cout<<"rejected";
+
+   //  int marks;
+   //  cout<<"Enter your marks:";
+   //  cin>>marks;
+
+   //  if(marks>33)
+    // {
+    // cout<<"pass";
+   //  }
+   //  else
+   //  {
+   //  cout<<"fail";
+
+   #include<iostream>
+   using namespace std;
+   int main()
    {
-      cout<<"Enter the number:-";
+      int marks;
+      cout<<"Enter your marks:-";
+      cin>>marks;
+      if(marks>33)
+      {
+          cout<<"Result is= "<<"PASS";
+      }
+      else
+      {
+          cout<<"Result is= "<<"FAIL";
+      }
+  
    }
-   cin>>n;
-   for(int count=1;count<=n;count=count+1)
-   {
-      cout<< count<<" "<<endl;
-   }
-   
-   
-}
+  
+      
+  
