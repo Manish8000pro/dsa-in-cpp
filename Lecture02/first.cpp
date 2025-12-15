@@ -1,37 +1,45 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
-{
-    int row,col,n;
-    cout<<"Enter the input: ";
-    cin>>n;
-    for(row=1;row<=n;row=row+1)
-    {   //print star
-        for(col=1;col<=row;col=col+1)
-        cout<<"* ";
+int main(){
 
-        for(col=1;col<=2*n-2*row;col=col+1)
-        cout<<"0 ";
+    // int a = 6, b = 5;
+    
+    // Arithmetic Operators
 
-        for(col=1;col<=row;col=col+1)
-        cout<<"* ";
+    // {
+    //     cout<< a+b<<endl;
+    //     cout<< a-b<<endl;
+    //     cout<< a*b<<endl;
+    //     cout<< a/b<<endl;
+    // }
 
-        cout<<endl;
+    // int marks1 = 60 , marks2 = 70;
+    
+    // int total = marks1 + marks2;
+    
+    // int avg = total/2;
+    // cout<<"total="<<total<<endl;
+    // cout<<"avrage=" <<avg<<endl;
+
+    // Assigenment Operators
+
+    // int x = 5;
+    // x = x+3;
+    // x = x-2;
+    // x = x*3;
+    // x = x/3;
+    // cout<<x<<endl;
+
+    //Comparision Operators;
+
+    int a =4, b = 5;
+
+    if(a==b){
+        cout<<true;
+    }
+    else
+    {
+        cout<<false;
     }
 
-    // Reverse Printing 
-
-    // for(row=n-1;row>=1;row=row-1)
-    // {
-    //     for(col=1;col<=row;col=col+1)
-    //     cout<<"* ";
-
-    //     for(col=1;col<=2*n-2*row;col=col+1)
-    //     cout<<"0 ";
-
-    //     for(col=1;col<=row;col=col+1)
-    //     cout<<"* ";
-
-    //     cout<<endl;
-    // }
 }
