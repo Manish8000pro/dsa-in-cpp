@@ -31,11 +31,21 @@ int main(){
 
     // Reverse counting
 
-    int i,n;
-    cout<<"Enter The Number: ";
-    cin>>n;
+    // int i,n;
+    // cout<<"Enter The Number: ";
+    // cin>>n;
 
-    for(int i=n;i>=1;i--)
-    cout<<i<<endl;
+    // for(int i=n;i>=1;i--)
+    // cout<<i<<endl;
+
+    int i,n;
+    cout<<"Enter No.: ";
+    cin>>n;
+    while (i<=n)
+    {
+        cout<<i<<endl;
+        i++;
+    }
+    
 
 }
