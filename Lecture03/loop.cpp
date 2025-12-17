@@ -27,5 +27,15 @@ int main(){
     // for(int i=1; i<=n; i++){
     //     cout<<i<<endl;
     // }
-    
+
+
+    // Reverse counting
+
+    int i,n;
+    cout<<"Enter The Number: ";
+    cin>>n;
+
+    for(int i=n;i>=1;i--)
+    cout<<i<<endl;
+
 }
