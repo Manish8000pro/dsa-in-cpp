@@ -38,14 +38,31 @@ int main(){
     // for(int i=n;i>=1;i--)
     // cout<<i<<endl;
 
-    int i,n;
-    cout<<"Enter No.: ";
-    cin>>n;
-    while (i<=n)
+    // int i,n;
+    // cout<<"Enter No.: ";
+    // cin>>n;
+    // while (i<=n)
+    // {
+    //     cout<<i<<endl;
+    //     i++;
+    // }
+    
+
+    // User input until correct
+
+    int password;
+    int correctPassword=1234;
+
+    cout<<"Enter the Password here: ";
+    cin>>password;
+
+    while (password!= correctPassword)
     {
-        cout<<i<<endl;
-        i++;
+        cout<<"Wrong! Try again"<<endl;
+        cin>>password;
     }
+
+    cout<<"Acces granted!"<<endl;
     
 
 }
