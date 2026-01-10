@@ -38,3 +38,4 @@ int findPages(vector<int> &arr, int k) {
 	}
 }
 
+// This gives the compilelation error
