@@ -11,7 +11,7 @@ bool allocateBook(int maxPages,vector<int> &arr, int k){
 		}
 	}
 
-	return count == k;
+	return count <= k;
 }
 
 
@@ -26,16 +26,30 @@ int findPages(vector<int> &arr, int k) {
 	}
 	// Array ka jo maximum hoga
 	int start =0;
+	int end = 0,ans;
 	for(int i = 0; i<n;i++){
-		start = Max(start,arr[i])
+		start = Max(start,arr[i]);
+		end+=arr[i];
 	}
 
-	while(start){
-		if (allocateBook(start,arr,k)){
-			return start;
+	// while(start){
+	// 	if (allocateBook(start,arr,k)){
+	// 		return start;
+	// 	}
+	// 	start++;
+	// }
+
+
+	while(start<=end){
+		mid = start + (end - start)/2;
+		if(allocateBook(mid,arr,k)){
+			ans = mid;
+			end = mid-1;
 		}
-		start++;
+		else{
+			start = mid+1;
+		}
 	}
+	return ans;
 }
-
 // This gives the compilelation error
