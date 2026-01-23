@@ -1,5 +1,4 @@
 bool searchMatrix(vector<vector<int>>& matrix, int target) {
-    
 	// 
 	int row = matrix.size() , col = matrix[0].size();
 
@@ -10,7 +9,6 @@ bool searchMatrix(vector<vector<int>>& matrix, int target) {
 			}
 		}
 	}
-
 
 	return false;
 }
