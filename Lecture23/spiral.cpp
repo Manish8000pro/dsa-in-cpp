@@ -1,12 +1,12 @@
 vector<int> spiralOrder(vector<vector<int>>& matrix) {
     vector<int>spiral;
 
-	int rowStart = 0, colStart = 0,rowEnd = matrix.size()-1,colEnd = matrix[0].size();
+	int rowStart = 0, colStart = 0,rowEnd = matrix.size()-1,colEnd = matrix[0].size()-1;
 
 	while(rowStart<=rowEnd&&colStart<=colEnd){
 		//first row ko print kravo 
 
-		for(int j= colStart;j<=colEnd;j++){
+		for(int j=colStart;j<=colEnd;j++){
 			spiral.push_back(matrix[rowStart][j]);
 		}
 		rowStart++;
@@ -15,15 +15,14 @@ vector<int> spiralOrder(vector<vector<int>>& matrix) {
 			
 		
 		for(int i = rowStart;i<=rowEnd;i++){
-			spiral.push_back(martix[i][colEnd]);
+			spiral.push_back(matrix[i][colEnd]);
 		}
 		colEnd--;
 		
-		
 
 		// Last row ko print kravo 
-		if(rowStar<=rowEnd){
-			for(int j =colEnd;j>=colStart;j--){
+		if(rowStart<=rowEnd){
+			for(int j=colEnd;j>=colStart;j--){
 			spiral.push_back(matrix[rowEnd][j]);
 		}
 		rowEnd--;
