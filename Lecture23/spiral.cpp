@@ -12,25 +12,32 @@ vector<int> spiralOrder(vector<vector<int>>& matrix) {
 		rowStart++;
 
 		// Last column ko print kravo
-
+			
+		
 		for(int i = rowStart;i<=rowEnd;i++){
 			spiral.push_back(martix[i][colEnd]);
 		}
 		colEnd--;
+		
+		
 
 		// Last row ko print kravo 
-
-		for(int j =colEnd;j>=colStart;j--){
+		if(rowStar<=rowEnd){
+			for(int j =colEnd;j>=colStart;j--){
 			spiral.push_back(matrix[rowEnd][j]);
 		}
 		rowEnd--;
+		}
+		
 
 		// first col ko print kravo
-
-		for(int i = rowEnd;i>=rowStart;i--){
+		if(colStart<=colEnd){
+			for(int i = rowEnd;i>=rowStart;i--){
 			spiral.push_back(matrix[i][colStart]);
 		}
 		colStart++;
+		}
+		
 	}
 	return spiral;
 }
