@@ -12,7 +12,7 @@ void rotate(vector<vector<int>>& matrix) {
 	int colStart = 0, colEnd = matrix[0].size()-1;
 
 	while(colStart<colEnd){
-		for(int i = 0;i<row.size;i++){
+		for(int i = 0;i<rowSize;i++){
 			swap(matrix[i][colStart],matrix[i][colEnd]);
 		}
 		colStart++,colEnd--;
