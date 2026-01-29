@@ -44,6 +44,9 @@ int main(){
         // char c[6] = "Rohit";
         // cout<<c;
 
+        string s = "Manish Kumar";
+        cout<<s;
+
     return 0;
 
 }
