@@ -1,6 +1,8 @@
 class Solution {
 public:
 
+//Yes ya no
+
 	bool isnextCharBigger(char first,char next){
 		string Roman = "IVXLCDM";
 
