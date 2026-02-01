@@ -12,7 +12,7 @@ public:
 			if(first==Roman[i]){
 				return true;
 			}
-			else if(first==Roman[i]){
+			else if(next==Roman[i]){
 				return false;
 			}
 		}
