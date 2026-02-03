@@ -6,6 +6,7 @@ int n = s.size();
 	int prefix = 0,suffix=1;
 
 	while(suffix<n){
+        // char match
 		if(s[prefix]==s[suffix]){
 			LPS[suffix]=prefix+1;
 			prefix++,suffix++;
