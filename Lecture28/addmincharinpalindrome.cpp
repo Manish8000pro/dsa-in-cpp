@@ -1,3 +1,6 @@
+// QQQQQQQQQQQQQQQQQ.Min Chars to Add for Palindrome<<<<<<<<<<<<<<<<<<<
+
+
 int minChar(string &s) {
     // Your code here
     string temp = s;
