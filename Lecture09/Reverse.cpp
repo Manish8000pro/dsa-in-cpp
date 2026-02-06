@@ -9,7 +9,7 @@ void reverseArray(vector<int>& arr) {
 	}
 }
 
-//second sol.
+//second sol. of Reverse array problem
 
 // int left = 0,right = arr.size()-1;
 
