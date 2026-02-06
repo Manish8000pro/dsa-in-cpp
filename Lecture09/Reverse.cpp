@@ -8,3 +8,15 @@ void reverseArray(vector<int>& arr) {
 		arr[n-1-i] = temp;
 	}
 }
+
+//second sol.
+
+// int left = 0,right = arr.size()-1;
+
+// while (left<right)
+// {
+// 	swap(arr[left],arr[right]){
+// 		left++;
+// 		right--;
+// 	}
+// }
