@@ -9,7 +9,10 @@ int main()
     // Ptr is a pointer its point to integer type value
 
     cout<<a<<endl;
+    // value of a
     cout<<&a<<endl;
+    // Address of a
     cout<<ptr<<endl;
+    // Address of a
     cout<<&ptr<<endl;
 }
