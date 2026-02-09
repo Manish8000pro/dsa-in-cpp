@@ -1,16 +1,16 @@
 #include<iostream>
 using namespace std;
 
-int add(int *p,int *size){
+// int add(int *p,int *size){
 
-    int ans = 0;
-    for(int i = 0;i<*size;i++){
+//     int ans = 0;
+//     for(int i = 0;i<*size;i++){
        
-        ans+=p[i];
-    }
+//         ans+=p[i];
+//     }
 
-    return ans;
-}
+//     return ans;
+// }
 
 int main()
 {
@@ -44,10 +44,13 @@ int main()
     //     cout<<p[i] <<endl;
     // }
 
-    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
-    int ans = add(arr,&n);
-    int n = 10;
-    cout<<ans;
+    // int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+    // int ans = add(arr,&n);
+    // int n = 10;
+    // cout<<ans;
+
+    char arr[5] = {'a','b','c','d','e'};
+    cout<<arr;
 
     return 0;
 }
