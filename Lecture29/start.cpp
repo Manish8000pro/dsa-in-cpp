@@ -15,4 +15,7 @@ int main()
     cout<<ptr<<endl;
     // Address of a
     cout<<&ptr<<endl;
+    // Address of Ptr
+
+    return 0;
 }
