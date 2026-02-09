@@ -1,6 +1,17 @@
 #include<iostream>
 using namespace std;
 
+int add(int *p,int *size){
+
+    int ans = 0;
+    for(int i = 0;i<*size;i++){
+       
+        ans+=p[i];
+    }
+
+    return ans;
+}
+
 int main()
 {
     // int a = 20;
@@ -18,20 +29,25 @@ int main()
     // // Address of Ptr
 
 
-    int arr[5] = {1,2,5,8,10};
-    for(int i=0;i<5;i++){
-        cout<<arr+i<<endl;
-    }
+    // int arr[5] = {1,2,5,8,10};
+    // for(int i=0;i<5;i++){
+    //     cout<<arr+i<<endl;
+    // }
 
-    // Print the value 
-    for(int i=0;i<5;i++){
-        cout<<*(arr+i)<<endl;
-    }
+    // // Print the value 
+    // for(int i=0;i<5;i++){
+    //     cout<<*(arr+i)<<endl;
+    // }
 
-    int *p = arr;
-    for(int i=0;i<5;i++){
-        cout<<p[i] <<endl;
-    }
+    // int *p = arr;
+    // for(int i=0;i<5;i++){
+    //     cout<<p[i] <<endl;
+    // }
+
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+    int ans = add(arr,&n);
+    int n = 10;
+    cout<<ans;
 
     return 0;
 }
