@@ -16,7 +16,7 @@ int main(){
         cout<<p[i]<<endl;
     }
 
-    // free the memory 
+    // free up the memory 
 
     delete[] p;
 
