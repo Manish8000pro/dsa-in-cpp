@@ -2,11 +2,16 @@
 using namespace std;
 
 void printOdd(int num){
+   
     if(num==0){
         return;
     }
-    cout<<num<<"";
-    printOdd(num-3);
+
+    printOdd(num-1);
+
+    if(num%2!=0){
+        cout<<num<<" ";
+    }
 }
 
 int main(){
