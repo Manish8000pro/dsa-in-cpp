@@ -1,6 +1,12 @@
-if(k<=2){
-		return k;
+int climbStairs(int n) {
+    // Your code here
+
+	if(n<=2){
+		return n;
 	}
 
-	return climbStairs(k-1)+climbStairs(k-2);
+	return climbStairs(n-1)+climbStairs(n-2);
+
+
+}
     // this code gives the time limited excited
