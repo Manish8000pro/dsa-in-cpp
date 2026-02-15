@@ -8,8 +8,8 @@ int main(){
 
     for(int i=0;i<10;i++){
         // p[i]=i*5;
-        p[i]=i-2;
-        p[i]=i=2;
+        // p[i]=i-2;
+        p[i]=i+2;
     }
 
     // Output 
