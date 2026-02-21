@@ -10,7 +10,7 @@ int linear(vector<int>& arr, int start, int n, int target) {
 
     return linear(arr, start + 1, n, target);
 }
-// linear searching 
+// linear searching =========
 
 int linearSearch(vector<int>& arr, int target) {
     return linear(arr, 0, arr.size(), target);
