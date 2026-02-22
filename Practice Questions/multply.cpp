@@ -1,5 +1,6 @@
 vector<int> productExceptSelf(vector<int>& nums) {
     // code here
+    // multiply others
 	int n = nums.size();
 	vector<int>mul(n,1);
 
