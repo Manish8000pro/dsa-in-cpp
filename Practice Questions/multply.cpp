@@ -15,5 +15,5 @@ vector<int> productExceptSelf(vector<int>& nums) {
 		mul[i]*=suffix;
 		suffix*=nums[i];
 	}
-	
+	return mul;
 }
