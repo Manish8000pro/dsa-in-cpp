@@ -11,10 +11,11 @@ vector<int> productExceptSelf(vector<int>& nums) {
 		prefix*=nums[i];
 	}
 
-	int suffix = 1;
+	 int suffix = 1;
 	for(int i=n-1;i>=0;i--){
 		mul[i]*=suffix;
 		suffix*=nums[i];
 	}
+	
 	return mul;
 }
