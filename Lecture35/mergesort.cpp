@@ -1,6 +1,7 @@
 class Solution {
 public:
-   // M
+   // Merge sort Question 
+   
    void Merge(vector<int>&arr, int start, int mid, int end){
 
 	// create a temp array
