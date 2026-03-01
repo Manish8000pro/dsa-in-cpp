@@ -8,7 +8,7 @@ public:
 			return;
 		}
 
-		// 21 size ka array 
+		// 21 size ka array lena h 
 		vector<bool>used(21,0);
 
 		
