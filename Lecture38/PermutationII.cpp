@@ -9,7 +9,7 @@ public:
 		}
 
 		// 21 size ka array lena h 
-		vector<bool>used(21,0);  // ye 21 
+		vector<bool>used(21,0);  // ye 21 ka array
 
 		
 		for(int i=0;i<n;i++){
