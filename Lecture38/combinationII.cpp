@@ -27,6 +27,7 @@ vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
     
 	vector<vector<int>>ans;
 	vector<int>path;
+    sort(candidates.begin(),candidates.end());
 	
 
 	combination(candidates,0,candidates.size(),path,ans,target);
