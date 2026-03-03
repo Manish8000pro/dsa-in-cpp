@@ -11,6 +11,9 @@ void combination(vector<int>&nums,int index,int n,vector<int>&path,vector<vector
 
 
 	vector<bool>used(51,0);
+    // select only unique number  
+    // add number to path
+    // target-nums[i],i+1 available
 
 	for(int i = index;i<n;i++){
 		if(!used[nums[i]]){
