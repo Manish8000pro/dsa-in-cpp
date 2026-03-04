@@ -5,7 +5,16 @@ class Student{
     public:
     string name;
     int age,rollNumber;
+
+    // constructer
+    Student (string n1,int ag1,int roll1){
+        name = n1;
+        age = ag1;
+        rollNumber = roll1;
+    }  
 };
+
+
 
 class customer{
     public:
@@ -14,18 +23,21 @@ class customer{
 };
 
 int main(){
-    Student S1, S2;
+    // Student S1, S2;
 
-    S1.name = "Manish";
-    S1.age = 22;
-    S1.rollNumber = 7;
+    // S1.name = "Manish";
+    // S1.age = 22;
+    // S1.rollNumber = 7;
 
-    S2.name = "Mamta";
-    S2.age = 16;
-    S2.rollNumber = 3;
+    // S2.name = "Mamta";
+    // S2.age = 16;
+    // S2.rollNumber = 3;
 
+    // cout<<S1.name<<" "<<S1.age<<" "<<S1.rollNumber<<" "<<endl;
+    // cout<<S2.name<<" "<<S2.age<<" "<<S2.rollNumber<<" "<<endl;
+
+    Student S1("Manish",22,7);
     cout<<S1.name<<" "<<S1.age<<" "<<S1.rollNumber<<" "<<endl;
-    cout<<S2.name<<" "<<S2.age<<" "<<S2.rollNumber<<" "<<endl;
 
     customer C1 ;
     C1.name = "Dinesh";
