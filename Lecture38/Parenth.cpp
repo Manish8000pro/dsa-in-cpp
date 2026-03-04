@@ -1,5 +1,8 @@
 void parenth(int open,int close,string&temp,vector<string>&ans){
 
+    // base conditions 
+
+
 	if(open>close || open<0||close<0){
 		return;
 	}
