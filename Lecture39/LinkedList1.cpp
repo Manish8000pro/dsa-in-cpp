@@ -15,11 +15,15 @@ class Node{
 
 int main(){
 
-    Node N1(10,NULL);
+    // Node N1(10,NULL);
+
     // N1.data = 10;
     // N1.next = NULL;
 
-    cout<<N1.data<<" ";
+    // cout<<N1.data<<" ";
+
+    Node*head = new Node(10,NULL);
+    cout<<head->data<<" ";
 
     return 0;
 
