@@ -41,7 +41,7 @@ int main(){
         temp = temp->next;
     }
 
-    // insert a node after a particullar Node 
+    // insert a node after a particullar Node  
     // inser 100 after 12;
      
     temp = Head;
