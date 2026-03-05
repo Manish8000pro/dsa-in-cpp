@@ -63,6 +63,32 @@ int main(){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
+
+    // insert a element before a element 12 se phale 300 ki insert krna h 
+
+    if(Head->data==12){
+        Node *temp = new Node(300);
+        temp->next = Head;
+        Head = temp;
+    }
+    Node *prev = NULL,*curr = Head;
+    while (curr->data!=12)
+    {
+        prev = curr;
+        curr = curr->next;
+    }
+    temp = new Node(300);
+    temp->next = curr;
+    prev->next = temp;
+
+    cout<<endl;
+    
+    // Print it 
+    temp = Head;
+    while(temp){
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
     
 
     return 0;
