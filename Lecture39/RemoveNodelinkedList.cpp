@@ -8,6 +8,7 @@
 // };
 
 ListNode* removeNodes(ListNode* head) {
+    // agr head null hua to return head krna h 
     if(!head || !head->next){
 		return head;
 	}
