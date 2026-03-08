@@ -8,6 +8,7 @@
 // };
 
 ListNode* middleNode(ListNode* head) {
+	// starting with slow and fast
 
 	ListNode* slow = head , *fast = head;
     
