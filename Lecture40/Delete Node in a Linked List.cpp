@@ -7,6 +7,7 @@
  * };
  */
 void deleteNode(ListNode* node) {
+	// Node deletion
     
 	ListNode *temp = node->next;
 	node->val = temp->val;
