@@ -25,6 +25,8 @@ bool isCircular(ListNode *head) {
 	}
 }
 
+// =========== 2nd Solution ================
+
 // Oteher solution of Circular LinkedList
 
 /*
