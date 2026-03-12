@@ -22,3 +22,14 @@ bool isPalindrome(ListNode* head) {
 		slow = slow->next;
 		fast = fast->next->next;
 	}
+    
+	// Reverse the second Halves
+
+	ListNode* prev = NULL , *curr = slow->next, *future = NULL;
+
+	while(curr){
+		future = curr->next;
+		curr->next = prev;
+		prev = curr;
+		curr = future;
+	}
