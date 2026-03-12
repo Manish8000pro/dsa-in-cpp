@@ -33,3 +33,18 @@ bool isPalindrome(ListNode* head) {
 		prev = curr;
 		curr = future;
 	}
+    // Compare the second Halve to first halve
+
+	ListNode* first = head,*second = prev;
+
+
+	while(second){
+		if(first->val!= second->val){
+			return false;
+		}
+		first = first->next;
+		second = second->next;
+	}
+	return true;
+         
+}
