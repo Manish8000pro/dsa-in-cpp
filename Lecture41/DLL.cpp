@@ -34,7 +34,7 @@ int main(){
             head = new Node(arr[0]);
         }
         else{
-            Node *temp = new Node(arr[1]);
+            Node *temp = new Node(arr[i]);
             temp->next = head;
             head->prev = temp;
             head = temp;
