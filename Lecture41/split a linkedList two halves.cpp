@@ -19,7 +19,7 @@ pair<ListNode*, ListNode*> splitList(ListNode *head) {
 		slow = slow->next;
 		fast = fast->next->next;
 	}
-	// Breaking the List
+	// Breaking the List into two halves
 
 	ListNode* secondHalf = slow->next;
 	
