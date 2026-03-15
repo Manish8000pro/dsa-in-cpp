@@ -23,7 +23,7 @@ void removeLoop(Node* head) {
 		}
 	}
 
-	// loop nhi ho
+	// iska koi  loop exist hi  nhi krta  ho
 
 	if(slow!=fast){
 		return;
