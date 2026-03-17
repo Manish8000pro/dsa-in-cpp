@@ -1,1 +1,1 @@
-// Q. 
+// Q. no. 332 on strike  
