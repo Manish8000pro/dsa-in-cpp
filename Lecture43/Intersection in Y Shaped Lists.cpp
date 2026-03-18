@@ -24,7 +24,7 @@ Node* intersectPoint(Node* head1, Node* head2) {
 	}
 
 	slow=head1;
-	// slow and fast ka meet poiint
+	// common point pe meet krenge
 
 	while(slow!=fast){
 		slow = slow->next;
