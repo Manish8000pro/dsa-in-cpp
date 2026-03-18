@@ -6,6 +6,7 @@
 
 Node* intersectPoint(Node* head1, Node* head2) {
     
+    // slow and fast pointer solve krta hu
 
 	Node* slow = head1, *fast = head1, *curr = head1;
 
