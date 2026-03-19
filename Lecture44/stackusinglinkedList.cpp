@@ -52,7 +52,7 @@ class Stack{
         return index->data;
     }
 
-    bool size(){
+    int size(){
         return sizes;
     }
 
