@@ -25,7 +25,7 @@ int largestRectangleArea(vector<int>& heights) {
     }
 
 
-    // Next smalest element on Lft side
+    // Next smallest element on Left side
 
     for(int i=n-1;i>=0;i--){
         while(!st.empty()&&heights[i]<heights[st.top()]){
