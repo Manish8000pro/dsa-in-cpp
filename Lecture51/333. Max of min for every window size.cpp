@@ -29,7 +29,7 @@ vector<int> maxOfMin(vector<int>& arr) {
 
     vector<int>result(n,0);
 
-    // elements ko unki shi position me dalne ke liye 
+    // elements ko unki shi position me dalne ke liye   
 
     for(int i=0;i<n;i++){
         int len = NSR[i]-NSL[i]-1;
