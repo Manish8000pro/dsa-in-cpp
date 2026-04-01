@@ -59,3 +59,5 @@ public:
         return ans;
     }
 };
+
+// ______________________Strike SOlution___________
