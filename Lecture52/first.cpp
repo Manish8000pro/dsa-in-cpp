@@ -1,4 +1,5 @@
 #include<iostream>
+#include <queue>
 using namespace std;
 
 class Node{
@@ -11,6 +12,10 @@ class Node{
             left = right = NULL;
         }
     };
+
+
+// Node left right    
+void preorder(Node *root)    
 
 int main(){
     
@@ -27,7 +32,7 @@ int main(){
         q.pop();
 
         // left Value
-        cout<<"Enter the "<<temp->data<<"left Node: ";
+        cout<<"Enter the "<<temp->data<<" left Node: ";
         cin>>leftValue;
 
         if(leftValue!=-1){
