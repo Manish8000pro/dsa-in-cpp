@@ -15,7 +15,43 @@ class Node{
 
 
 // Node left right    
-void preorder(Node *root)    
+void preorder(Node *root){
+    if (!root)
+    {
+        return;
+    }
+    cout<<root->data<<" ";
+    preorder(root->left);
+    preorder(root->right);
+    
+}
+
+// left Node right
+
+void inorder(Node *root){
+    if (!root)
+    {
+        return;
+    }
+    
+    inorder(root->left);
+    cout<<root->data<<" ";
+    inorder(root->right);
+    
+}
+
+// left right Node
+
+void postorder(Node *root){
+    if (!root)
+    {
+        return;
+    }
+    
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->data<<" ";
+}
 
 int main(){
     
@@ -50,6 +86,18 @@ int main(){
             q.push(temp->right);
         }
     }
+
+    cout<<"preorder Traversal: "<<" ";
+    preorder(root);
+    cout<<endl;
+
+    cout<<"inorder Traversal: "<<" ";
+    inorder(root);
+    cout<<endl;
+
+    cout<<"postorder Traversal: "<<" ";
+    postorder(root);
+    cout<<endl;
 
     return 0;
     
