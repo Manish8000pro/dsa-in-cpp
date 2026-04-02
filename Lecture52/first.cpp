@@ -78,7 +78,7 @@ int main(){
 
         // Right Value
 
-        cout<<"Enter the "<<temp->data<<"right Node: ";
+        cout<<"Enter the "<<temp->data<<" right Node: ";
         cin>>rightValue;
 
         if(rightValue!=-1){
