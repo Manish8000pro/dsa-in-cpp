@@ -19,7 +19,7 @@ class Solution {
 
         while(!q.empty()){
             int len = q.size();
-            
+
             // number of element in current level 
 
             vector<int>result;
@@ -30,9 +30,13 @@ class Solution {
 
                 result.push_back(temp->val);
 
+                // left position 
+
                 if(temp->left){
                     q.push(temp->left);
                 }
+
+                // right postion 
 
                 if(temp->right){
                     q.push(temp->right);
