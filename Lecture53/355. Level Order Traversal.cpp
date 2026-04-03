@@ -19,7 +19,8 @@ class Solution {
 
         while(!q.empty()){
             int len = q.size();
-            // number of element in current level
+            
+            // number of element in current level 
 
             vector<int>result;
 
