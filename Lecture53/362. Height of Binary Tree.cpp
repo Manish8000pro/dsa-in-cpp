@@ -1,0 +1,18 @@
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+};
+
+class Solution {
+  public:
+    int height(TreeNode* root) {
+        // code here
+        if(!root || (!root->left&&!root->right)){
+            return 0;
+        }
+
+        return 1+max(height(root->left),height(root->right));
+    }
+};
