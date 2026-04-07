@@ -13,6 +13,7 @@ int minDepth(TreeNode* root) {
     if(!root){
         return 0;
     }
+    // if left not exist
 
     if (!root->left)
         return 1 + minDepth(root->right);
