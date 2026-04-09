@@ -72,7 +72,7 @@ public:
             return 0;
         }
 
-        // leaf Node
+        // leaf Node  
         if(!root->left&&!root->right)
         return 1;
 
