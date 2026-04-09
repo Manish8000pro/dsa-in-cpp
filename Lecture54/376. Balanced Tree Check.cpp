@@ -76,6 +76,8 @@ public:
         if(!root->left&&!root->right)
         return 1;
 
+        // left height 
+
         int leftHeight = checkBalance(root->left);
         if(leftHeight==-1){
             return -1;
