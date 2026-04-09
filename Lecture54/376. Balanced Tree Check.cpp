@@ -83,6 +83,8 @@ public:
             return -1;
         }
 
+        // right height
+
         int rightHeight = checkBalance(root->right);
         if(rightHeight==-1){
             return -1;
