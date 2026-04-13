@@ -30,6 +30,8 @@ public:
             else{
                 Node* pred = curr->left;
 
+                // Move to the right most NOde untill you found NULL or curr
+
                 while(pred->right&&pred->right!=curr){
                     pred = pred->right;
                 }
