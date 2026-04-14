@@ -26,20 +26,18 @@ Node* insert(Node* root,int val){
     }
 
     return root;
-
-        // inorder Traversal
-
-    void inorder(Node*root){
-        if(!root){
-            return;
-        }
-
-        inorder(root->left);
-        cout<<root->data<<" ";
-        inorder(root->right);
-    }
 }
+// inorder Traversal
 
+void inorder(Node*root){
+    if(!root){
+        return;
+    }
+
+    inorder(root->left);
+    cout<<root->data<<" ";
+    inorder(root->right);
+}
 
 
 int main(){
