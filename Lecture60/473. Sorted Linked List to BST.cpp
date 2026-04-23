@@ -1,4 +1,4 @@
-// sorted
+// sorted LinkedList to Bst
 /**
  * Definition for singly-linked list.
  * struct ListNode {
