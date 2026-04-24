@@ -44,6 +44,25 @@ class MaxHeap{
         
     }
 
+    void Heapify(int i){
+        int largest = i;
+        int left = 2*i+1;
+        int right = 2*i+2;
+
+        if(left<index && arr[largest]<arr[left]){
+            largest = left;
+        }
+
+        if(right<index && arr[largest]<arr[right]){
+            largest = right;
+        }
+
+        if(largest!=i){
+            swap(arr[largest],arr[i]);
+            Heapify(largest);
+        }
+    }
+
     void deleteHeap(){
         // heap is empty 
         if(index==0){
@@ -52,8 +71,16 @@ class MaxHeap{
         }
 
         if(index==1){
-            cout<<arr[index-1]<<" delete the Maxheap element\n";
+            cout<<arr[0]<<" delete the Maxheap element\n";
+            index--;
+            return;
         }
+
+        cout<<arr[0]<<" delete the Maxheap element\n";
+        arr[0] = arr[index-1];
+        index--;
+
+        Heapify(0);
     }
 
     void printHeap(){
