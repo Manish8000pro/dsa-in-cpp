@@ -46,6 +46,14 @@ class MaxHeap{
 
     void deleteHeap(){
         // heap is empty 
+        if(index==0){
+            cout<<" Heap is underflow\n";
+            return;
+        }
+
+        if(index==1){
+            cout<<arr[index-1]<<" delete the heap element\n";
+        }
     }
 
     void printHeap(){
