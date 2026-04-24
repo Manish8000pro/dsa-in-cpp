@@ -52,7 +52,7 @@ class MaxHeap{
         }
 
         if(index==1){
-            cout<<arr[index-1]<<" delete the heap element\n";
+            cout<<arr[index-1]<<" delete the Maxheap element\n";
         }
     }
 
