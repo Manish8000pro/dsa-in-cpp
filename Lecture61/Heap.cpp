@@ -44,6 +44,10 @@ class MaxHeap{
         
     }
 
+    void deleteHeap(){
+        // heap is empty 
+    }
+
     void printHeap(){
         for(int i=0;i<index;i++){
             cout<<arr[i]<<" ";
