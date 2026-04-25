@@ -97,7 +97,7 @@ int main(){
     h1.insert(30);
     h1.insert(5);
     h1.deleteHeap();
-    h1.deleteHeap();
+    
     h1.insert(100);
     h1.deleteHeap();
 
