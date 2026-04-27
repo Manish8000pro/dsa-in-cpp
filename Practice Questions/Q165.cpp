@@ -35,5 +35,7 @@ TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         root->right = Tree(in,pre,pos+1,inEnd,index+(pos-inStart)+1);
 
         return root;
+
+        
     }
 }
