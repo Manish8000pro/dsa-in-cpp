@@ -105,6 +105,7 @@ int main(){
     h1.deleteHeap();
 
     h1.printHeap();
+    
 
     return 0;
 }
