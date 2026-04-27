@@ -98,6 +98,7 @@ int main(){
     h1.insert(40);
     h1.insert(50);
     h1.insert(500);
+    h1.insert(300);
     h1.insert(100);
     h1.deleteHeap();
     h1.deleteHeap();
