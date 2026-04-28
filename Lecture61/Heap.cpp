@@ -102,7 +102,6 @@ int main(){
     h1.insert(100);
     h1.deleteHeap();
     h1.deleteHeap();
-    h1.deleteHeap();
 
     h1.printHeap();
     
