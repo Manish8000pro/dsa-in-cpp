@@ -23,7 +23,6 @@ int main(){
     int arr[] = {10,15,18,30,17,26,48,5,8,19};
 
     buildMaxHeap(arr,10);
-    
     // print all elemnent of the heap
     for(int i=0;i<10;i++){
         cout<<arr[i]<<" ";
