@@ -20,5 +20,6 @@ void buildMaxHeap(int arr[],int N){
 }
 
 int main(){
-
+    int arr[] = {10,15,18,30,17,26,48,5,8,19};
+    
 }
