@@ -13,6 +13,12 @@ void heapify(int arr[],int index,int N){
     largest = right;
 }
 
+void buildMaxHeap(int arr[],int N){
+    for(int i=N/2-1;i>=0;i--){
+        heapify(arr,i,N);
+    }
+}
+
 int main(){
 
 }
