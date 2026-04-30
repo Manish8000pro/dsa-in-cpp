@@ -27,20 +27,20 @@ void buildMaxHeap(int arr[], int N){
 }
 
 
-// void heapsort(int arr[], int N){
+void heapsort(int arr[], int N){
    
-//     for(int i=N-1;i>0;i--){
-//         swap(arr[0],arr[i]);
-//         heapify(arr,0,i);
-//     }
-// }
+    for(int i=N-1;i>0;i--){
+        swap(arr[0],arr[i]);
+        heapify(arr,0,i);
+    }
+}
 
 int main(){
 
     int arr[] = {10,15,18,30,17,26,48,5,8,19};
 
     buildMaxHeap(arr,10);
-    // heapsort(arr,10);
+    heapsort(arr,10);
     // print all elemnent of the heap
     for(int i=0;i<10;i++){
         cout<<arr[i]<<" ";
