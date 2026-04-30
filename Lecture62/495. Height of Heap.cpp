@@ -8,6 +8,7 @@ public:
         }
 
         int height = 0;
+        
 
         while(N>1){
             N/=2;
