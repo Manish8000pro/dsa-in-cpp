@@ -1,5 +1,5 @@
 // 490. Minimum Cost of Ropes Minimum
-
+// solution of this
 class Solution {
 public:
     long long minCost(vector<long long>& arr) {
