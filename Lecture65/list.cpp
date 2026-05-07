@@ -10,7 +10,11 @@ int main(){
     l1.push_front(13);
     l1.push_front(8);
 
-    for(auto x: l1){
-        cout<<x<<" ";
+    // for(auto x: l1){
+    //     cout<<x<<" ";
+    // }
+
+    for(auto it=l1.begin();it!=l1.end();it++){
+        cout<<*it<<" ";
     }
 }
