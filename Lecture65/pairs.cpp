@@ -32,6 +32,14 @@ int main(){
     //     cout<<a[i]<<" ";
     // }
 
+    // for(int x : a){
+    //     cout<<x<<" ";
+    // }
+
+    for(int &x : a){
+        x = x+10;
+    }
+
     for(int x : a){
         cout<<x<<" ";
     }
