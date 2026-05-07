@@ -25,5 +25,7 @@ int main(){
     //     cout<<x.first<<" "<<x.second<<endl;
     // }
 
+    cout<<s1.size();
+
     return 0;
 }
