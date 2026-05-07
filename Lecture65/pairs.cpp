@@ -56,12 +56,12 @@ int main(){
     // }
 
     // can i put the pair inside a vector
-    // vector<pair<int,int>>v;
-    // v.push_back(make_pair(10,20));
-    // v.push_back(make_pair(30,20));
-    // v.push_back(make_pair(30,50));
-    // v.push_back(make_pair(60,70));
-    // v.push_back(make_pair(80,90));
+    vector<pair<int,int>>v;
+    v.push_back(make_pair(10,20));
+    v.push_back(make_pair(30,20));
+    v.push_back(make_pair(30,50));
+    v.push_back(make_pair(60,70));
+    v.push_back(make_pair(80,90));
 
     // for(pair<int,int>x : v){
     //     cout<<x.first<<" "<<x.second<<endl;
@@ -84,20 +84,20 @@ int main(){
         // sort them in descending order
         // sort them in descending order, first value, second
 
-        // sort(v.begin(),v.end(),greater<pair<int,int>>());
+        sort(v.begin(),v.end(),greater<pair<int,int>>());
             
-        // for(auto x: v){
-        //     cout<<x.first<<" "<<x.second<<endl;
+        for(auto x: v){
+            cout<<x.first<<" "<<x.second<<endl;
 
-        vector<pair<int,int>>v;
-        v.push_back(make_pair(10,20));
-        v.push_back(make_pair(30,20));
-        v.push_back(make_pair(30,50));
-        v.push_back(make_pair(60,70));
-        v.push_back(make_pair(80,90));
+        // vector<pair<int,int>>v;
+        // v.push_back(make_pair(10,20));
+        // v.push_back(make_pair(30,20));
+        // v.push_back(make_pair(30,50));
+        // v.push_back(make_pair(60,70));
+        // v.push_back(make_pair(80,90));
 
         //  for(pair<int,int>::iterator it=v.begin();it!=v.end();it++);
-    // }
+    }
 
 
     return 0;
