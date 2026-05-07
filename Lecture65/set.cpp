@@ -25,6 +25,8 @@ int main(){
     //     cout<<x.first<<" "<<x.second<<endl;
     // }
 
+    // cout<<s1.size();
+    s1.erase(10,11);
     cout<<s1.size();
 
     return 0;
