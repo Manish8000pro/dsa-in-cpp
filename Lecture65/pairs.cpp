@@ -45,7 +45,16 @@ int main(){
     // }
 
     // can i put the pair inside a vector
-    
+    vector<pair<int,int>>v;
+    v.push_back(make_pair(10,20));
+    v.push_back(make_pair(30,20));
+    v.push_back(make_pair(40,50));
+    v.push_back(make_pair(60,70));
+    v.push_back(make_pair(80,90));
+
+    // for(pair<int,int>x : v){
+    //     cout<<x.first<<" "<<x.second<<endl;
+    // }
 
     return 0;
 }
