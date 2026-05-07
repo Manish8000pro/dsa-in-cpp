@@ -21,9 +21,9 @@ int main(){
     s1.insert({7,9});
     s1.insert({10,20});
 
-    for(auto x: s1){
-        cout<<x.first<<" "<<x.second<<endl;
-    }
+    // for(auto x: s1){
+    //     cout<<x.first<<" "<<x.second<<endl;
+    // }
 
     return 0;
 }
