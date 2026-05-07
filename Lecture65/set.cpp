@@ -34,6 +34,13 @@ int main(){
     s.insert(20);
     s.insert(30);
 
+    if(s.find(55)!=s.end()){
+        cout<<"Found";
+    }
+    else{
+        cout<<"Not Found";
+    }
+
     // auto it = s.find(90);
     // cout<<*it<<endl;
 
