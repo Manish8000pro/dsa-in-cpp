@@ -8,12 +8,22 @@ int main(){
 
     // cout<<p.first<<" "<<p.second<<" ";
 
-    pair<string,int>p;
+    // pair<string,int>p;
 
+    // p.first = "Manish";
+    // p.second = 30;
+
+    // cout<<p.first<<" "<<p.second<<" ";
+
+    // 2 value 
+    // 3 value ke pair bnane ho to 
+
+    pair<string,pair<int,int>>p;
     p.first = "Manish";
-    p.second = 30;
+    p.second.first = 30;
+    p.second.second = 40;
 
-    cout<<p.first<<" "<<p.second<<" ";
+    cout<<p.first<<" "<<p.second.first<<" "<<p.second.second<<" ";
 
     return 0;
 }
