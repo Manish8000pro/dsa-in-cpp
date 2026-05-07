@@ -1,5 +1,6 @@
 #include<iostream>
 #include<set>
+#include<unordered_set>
 using namespace std;
 
 int main(){
@@ -29,20 +30,30 @@ int main(){
     // s1.erase({10,11});
     // cout<<s1.size();
 
-    set<int>s;
-    s.insert(10);
-    s.insert(20);
-    s.insert(30);
+    // set<int>s;
+    // s.insert(10);
+    // s.insert(20);
+    // s.insert(30);
 
-    if(s.find(55)!=s.end()){
-        cout<<"Found";
-    }
-    else{
-        cout<<"Not Found";
-    }
+    // if(s.find(55)!=s.end()){
+    //     cout<<"Found";
+    // }
+    // else{
+    //     cout<<"Not Found";
+    // }
 
     // auto it = s.find(90);
     // cout<<*it<<endl;
+
+    unordered_set<int>s;
+    s.insert(20);
+    s.insert(30);
+    s.insert(40);
+    s.insert(5);
+
+    for(auto x: s){
+        cout<<x<<" ";
+    }
 
     return 0;
 }
