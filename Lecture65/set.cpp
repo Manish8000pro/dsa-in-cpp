@@ -45,11 +45,33 @@ int main(){
     // auto it = s.find(90);
     // cout<<*it<<endl;
 
-    unordered_set<int>s;
+    // unordered_set<int>s;
+    // s.insert(20);
+    // s.insert(30);
+    // s.insert(40);
+    // s.insert(5);
+
+    // for(auto x: s){
+    //     cout<<x<<" ";
+    // }
+
+    // multiset<int>s1;
+    // s1.insert(10);
+    // s1.insert(20);
+    // s1.insert(10);
+    // s1.insert(30);
+
+    // for(auto x: s1){
+    //     cout<<x<<" ";
+    // }
+
+    // duplicate multiple  entery allowed ho sorted naa ho to bhi clelga o(1)
+
+    unordered_multiset<int>s;
     s.insert(20);
     s.insert(30);
     s.insert(40);
-    s.insert(5);
+    s.insert(20);
 
     for(auto x: s){
         cout<<x<<" ";
