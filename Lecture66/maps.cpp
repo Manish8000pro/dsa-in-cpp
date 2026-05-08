@@ -14,7 +14,11 @@ int main(){
 
     // second method
     m.insert(make_pair("Ram",50));
-    cout<<m["Ram"]<<" ";
+    // cout<<m["Ram"]<<" ";
+
+    for(auto x: m){
+        cout<<x.first<<" "<<x.second<<endl;
+    }
 
     return 0;
 }
