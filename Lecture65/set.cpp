@@ -71,6 +71,7 @@ int main(){
     s.insert(20);
     s.insert(30);
     s.insert(40);
+    s.insert(40);
     s.insert(20);
 
     for(auto x: s){
