@@ -11,4 +11,6 @@ int main(){
     m["Vikash"] = 30;
 
     cout<<m["Manish"]<<" ";
+
+    return 0;
 }
