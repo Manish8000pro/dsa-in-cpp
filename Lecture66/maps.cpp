@@ -10,9 +10,11 @@ int main(){
     m["Dinesh"] = 20;
     m["Vikash"] = 30;
 
-    cout<<m["Manish"]<<" ";
+    // cout<<m["Manish"]<<" ";
 
     // second method
+    m.insert(make_pair("Ram",50));
+    cout<<m["Ram"]<<" ";
 
     return 0;
 }
