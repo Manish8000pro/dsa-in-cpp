@@ -4,6 +4,7 @@ using namespace std;
 
 int main(){
     map<string,int>m;
+    // multimap<string,int>m;
 
     // how to insert value inside it 
     m["Manish"] = 10;
