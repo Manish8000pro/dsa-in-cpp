@@ -5,12 +5,13 @@
 using namespace std;
 
 int main(){
-    unordered_map<string,int>m;
+    // unordered_map<string,int>m;
+    unordered_multimap<string,int>m;
 
     // how to insert value inside it 
-    m["Manish"] = 10;
-    m["Dinesh"] = 20;
-    m["Vikash"] = 30;
+    // m["Manish"] = 10;
+    // m["Dinesh"] = 20;
+    // m["Vikash"] = 30;
 
     // cout<<m["Manish"]<<" ";
 
