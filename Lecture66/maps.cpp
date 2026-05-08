@@ -12,5 +12,7 @@ int main(){
 
     cout<<m["Manish"]<<" ";
 
+    // second method
+
     return 0;
 }
