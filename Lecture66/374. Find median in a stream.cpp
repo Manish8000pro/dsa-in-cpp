@@ -9,7 +9,7 @@ public:
         vector<double>result;
 
         for(int x:  arr){
-            // left side 
+             // left side empty or fr x <= left side ke top element se, left side mein push kar do
 
             // right side kr  do 
             if(maxHeapLeft.empty()|| x<=maxHeapLeft.top()){
