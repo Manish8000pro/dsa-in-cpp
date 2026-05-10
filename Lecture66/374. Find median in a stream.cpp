@@ -18,6 +18,8 @@ public:
             else{
                 minHeapRight.push(x);
             }
+             // Dono side ke heap ko balance kar do
+            // dono leff heap == right Heap
 
             if(maxHeapLeft.size()>minHeapRight.size()+1){
                 minHeapRight.push(maxHeapLeft.top());
