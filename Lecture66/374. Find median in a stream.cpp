@@ -20,6 +20,11 @@ public:
             }
              // Dono side ke heap ko balance kar do
             // dono leff heap == right Heap
+             // leftheap = right+1
+
+            // leftside > right+1
+            // leftside < right
+            // balancing the heap size
 
             if(maxHeapLeft.size()>minHeapRight.size()+1){
                 minHeapRight.push(maxHeapLeft.top());
