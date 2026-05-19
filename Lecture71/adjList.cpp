@@ -13,7 +13,7 @@ int main(){
     // Enter the edges
     int u,v;
 
-    for(int i=0,i<edges:i++){
+    for(int i=0;i<edges;i++){
         cin>>u>>v;
         adjList[u].push_back(v);
         adjList[v].push_back(u);
