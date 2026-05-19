@@ -9,7 +9,7 @@ public:
         for(char c: t){
             targetCounter[c]++;
         }
-        // count of characterin the current window
+        // count of characterin the current window 
         vector<int>windowCounter(128,0);
         int minLen = INT_MAX,startIndex = 0,left = 0,right = 0,n = s.size();
         //minLength of my substring answer,startIndex  answer aayega uska starting index konsa hoga
