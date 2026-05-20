@@ -14,7 +14,7 @@ int main(){
     // vertex 5
     // 5*5 : 5 rows and 5 column : initalize sabko 0
 
-    cout<<"Enter the edges\n";
+    cout<<"Enter the edges\n"; 
 
     for(int i=0;i<edges;i++){
         int u,v,weight;
