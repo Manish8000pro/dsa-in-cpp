@@ -29,7 +29,7 @@ int main(){
         for(int j=0;j<adjList[i].size();j++){
             cout<<adjList[i][j].first<<" "<<adjList[i][j].second<<" ";
         }
-        cout<<endl;
+        cout<<endl; 
     }
     
 
