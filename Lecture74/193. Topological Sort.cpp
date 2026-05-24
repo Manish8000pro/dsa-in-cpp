@@ -2,6 +2,8 @@
  class Solution {
 public:
     // mark node as visited 
+    // explore its all neighbour who are not visted yet
+    
     void topSort(vector<int>adj[],int node,vector<bool>&visited,vector<int>&result){
         visited[node]=1;
 
