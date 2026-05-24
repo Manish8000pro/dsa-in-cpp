@@ -1,7 +1,7 @@
  // 193. Topological Sort
  class Solution {
 public:
-    
+    // mark node as visited 
     void topSort(vector<int>adj[],int node,vector<bool>&visited,vector<int>&result){
         visited[node]=1;
 
