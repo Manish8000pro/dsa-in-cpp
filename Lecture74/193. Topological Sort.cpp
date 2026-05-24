@@ -3,7 +3,7 @@
 public:
     // mark node as visited 
     // explore its all neighbour who are not visted yet
-    
+    // result ke ander push back ho jao
     void topSort(vector<int>adj[],int node,vector<bool>&visited,vector<int>&result){
         visited[node]=1;
 
