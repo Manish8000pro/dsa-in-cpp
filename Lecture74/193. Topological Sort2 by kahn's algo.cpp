@@ -1,1 +1,1 @@
- // 193. Topological Sort by 
+ // 193. Topological Sort by Kahn's algorithm
