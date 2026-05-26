@@ -1,6 +1,6 @@
 //190. Directed Graph Cycle
 bool isCyclic(int V, vector<vector<int>>& edges) {
-    // kahn's algorithm
+    // kahn's algorithm 
         vector<int>adj[V];
         vector<int>inDegree(V,0);
 
