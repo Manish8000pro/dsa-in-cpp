@@ -25,7 +25,7 @@ bool isCyclic(int V, vector<vector<int>>& edges) {
             }
         }
 
-        vector<int>result;
+        vector<int>result; 
 
         while(!q.empty()){
             int node = q.front();
