@@ -41,4 +41,4 @@ bool isCyclic(int V, vector<vector<int>>& edges) {
         }
 
         return result.size()!=V ? 1:0;
-}
+} 
