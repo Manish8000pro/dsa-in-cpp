@@ -15,7 +15,7 @@ bool isCyclic(int V, vector<vector<int>>& edges) {
             adj[u].push_back(V);
             inDegree[V]++;
         }
-        queue<int>q;
+        queue<int>q; 
 
         // put all thos node into the queue whose inDegree is Zero
 
