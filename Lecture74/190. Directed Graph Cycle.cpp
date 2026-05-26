@@ -4,7 +4,7 @@ bool isCyclic(int V, vector<vector<int>>& edges) {
         vector<int>adj[V];
         vector<int>inDegree(V,0);
 
-        // find the inDegree of each node
+        // find the inDegree of each node 
 
         for(auto edge: edges){
             // u --> v
