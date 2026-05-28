@@ -12,11 +12,15 @@ class student{
     int rollnumber;
     string college;
 
-    student(string n, int a, int rn,string c){
+    student(string n, int a, int rn,string c){ // Parameterized constructer
         name = n;
         age = a;
         rollnumber = rn;
         college = c;
+    }
+
+    student(){ // default constructer
+        // empty body
     }
 };
 
