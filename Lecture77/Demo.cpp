@@ -35,7 +35,7 @@ class student{
 
 int main(){
 
-    // stack & Heap
+    // stack 
     student s1("Manish",20,8,"IIT Guhawati");
     // s1.name = "Manish";
     // s1.age = 20;
@@ -46,7 +46,13 @@ int main(){
 
     s1.markAttendance();
 
-    cout<<s1.name<<" "<<s1.age<<" "<<s1.rollnumber<<" "<<s1.college<<" ";
+    // cout<<s1.name<<" "<<s1.age<<" "<<s1.rollnumber<<" "<<s1.college<<" ";
+
+    // Heap
+
+    student *s2 = new student("Rohit", 26, 102, "IIT G");
+
+    cout<<s2->name<<" "<<s2->age<<" "<<s2->rollnumber<<" "<<s2->college<<" ";
 
     return 0;
 }
