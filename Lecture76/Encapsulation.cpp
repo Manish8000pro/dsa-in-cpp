@@ -2,35 +2,37 @@
 
 using namespace std;
 
-class student{
+class BankAccount{
 
-    public: // Access modifier
-    string name;
-    int age;
-    int rollnumber;
-    string college;
+    public:
+    int balance;
 
-    student(string n, int a, int rn,string c){ 
-        name = n;
-        age = a;
-        rollnumber = rn;
-        college = c;
+    int withdraw(int amount){
+        if(amount<=balance){
+            balance -= amount;
+        }
+        cout<<"Amount "<< amount<< " is withdrawn"<<endl;
+
+        return amount;
     }
 
-    student(){ 
-        // empty body
-    }
+    int deposit(int amount){
+        if(amount<0) return -1;
+        balance += amount;
 
-    // Behaviours an object --> functions -->methods
-    void markAttendance(){
-        cout<<name<<" is present "<<endl;
-    }
+        cout<<"Amount "<<amount<<" is deposit"<<endl;
 
-    void print(){
-        cout<<name<<" "<<age<<" "<<rollnumber<<" "<<college<<" "<<endl;
+        return 0;
     }
 };
 
 int main(){
+    BankAccount *b1 = new BankAccount();
 
+    b1->deposit(100);
+    b1->deposit(300);
+
+    b1->withdraw(200);
+
+    cout<<"Total Balance is " << b1->balance<<endl;
 }
