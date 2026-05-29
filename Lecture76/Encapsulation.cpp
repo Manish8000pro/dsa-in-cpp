@@ -4,13 +4,18 @@ using namespace std;
 
 class BankAccount{
 
-    public:
+    private:
     int balance;
 
+    public:
     int withdraw(int amount){
-        if(amount<=balance){
-            balance -= amount;
+
+        if(amount>balance){
+            cout<< "Insufficient Balance"<<endl;
+            return -1;
         }
+
+        balance -= amount;
         cout<<"Amount "<< amount<< " is withdrawn"<<endl;
 
         return amount;
@@ -24,6 +29,10 @@ class BankAccount{
 
         return 0;
     }
+
+    int getbalance(){
+        return balance;
+    }
 };
 
 int main(){
@@ -32,7 +41,7 @@ int main(){
     b1->deposit(100);
     b1->deposit(300);
 
-    b1->withdraw(200);
+    b1->withdraw(500);
 
-    cout<<"Total Balance is " << b1->balance<<endl;
+    cout<<"Total Balance is "<<b1->getbalance()<<endl;
 }
