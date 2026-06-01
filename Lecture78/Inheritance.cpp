@@ -38,9 +38,9 @@ class EngineeringStudent: public Student {
 // DRY - Do not repeat youself
 
 int main(){
-    Student *s1 = new Student();
+    Student *s1 = new Student("Aditya", 28);
 
-    EngineeringStudent *e1 = new EngineeringStudent();
+    EngineeringStudent *e1 = new EngineeringStudent("Aditya", 28);
 
     // s1->name = "Manish";
     // s1->age = 21;
