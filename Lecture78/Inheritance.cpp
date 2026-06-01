@@ -15,16 +15,8 @@ class Student {
     }
 };
 
-class EngineeringStudent {
-    public:
-    string name;
-    int age;
-    int rollNumber;
-    string college;
-
-    void markAttendance(){
-        cout<<name<< " is present"<<endl;
-    }
+class EngineeringStudent: public Student {
+   
 };
 
 // DRY - Do not repeat youself
