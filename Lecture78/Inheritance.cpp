@@ -27,6 +27,8 @@ class EngineeringStudent {
     }
 };
 
+// DRY - Do not repeat youself
+
 int main(){
     Student *s1 = new Student();
 
