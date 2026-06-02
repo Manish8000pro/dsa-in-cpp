@@ -3,5 +3,5 @@
 using namespace std;
 
 int main(){
-     // inheritance
+     // single  inheritance
 }
