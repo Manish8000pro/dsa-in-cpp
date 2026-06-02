@@ -24,7 +24,7 @@ class Solution {
 
         while(!q.empty()){
             int node = q.front();
-            q.pop();
+            q.pop(); 
             totalTaskComplete++;
 
             for(int neib: adj[node]){
