@@ -39,4 +39,4 @@ class Solution {
         return totalTaskComplete==N;
 
     }
-};
+}; 
