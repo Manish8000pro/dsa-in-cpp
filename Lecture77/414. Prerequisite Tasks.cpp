@@ -11,7 +11,7 @@ class Solution {
             int v = p.first;
             int u = p.second;
             adj[u].push_back(v);
-            InDegree[v]++;
+            InDegree[v]++; 
         }
 
         queue<int>q;
