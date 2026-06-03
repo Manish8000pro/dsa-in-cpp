@@ -8,7 +8,7 @@ class Student {
      int a;
 
      void markAttendance(){
-        cout<<n         << " is present"<<endl;
+        cout<<n<< " is present"<<endl;
     }
 
 };
