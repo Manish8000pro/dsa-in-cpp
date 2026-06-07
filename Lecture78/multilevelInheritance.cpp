@@ -16,7 +16,7 @@ class EngineeringStudent: public Student{
      public:
 
      void attendentLab(){
-          cout<<" Lab attendent by "<<name<<endl;
+        cout<<"Lab attendent by "<<name<<endl;
      }
 };
 
