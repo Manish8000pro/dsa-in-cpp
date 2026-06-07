@@ -39,4 +39,6 @@ int main(){
 
     ms1->markAttendance();
     ms1->performeOperation();
+
+    return 0;
 }
