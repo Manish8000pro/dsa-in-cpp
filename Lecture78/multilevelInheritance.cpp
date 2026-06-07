@@ -37,5 +37,5 @@ int main(){
     cs1->attendentLab();
     cs1->printCode();
 
-    
+    return 0 ;
 }
