@@ -22,6 +22,7 @@ class EngineeringStudent: public Student{
 
 class CSEStudent: public EngineeringStudent {
 
+    public:
     void printCode(){
         cout<< name<< " is printing code"<<endl;
     }
