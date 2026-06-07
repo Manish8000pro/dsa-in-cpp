@@ -3,20 +3,17 @@
 using namespace std;
 
 class Student {
-     public:
-     string name;
-     int a;
+    public:
+    string name;
+    int age;
 
-     void markAttendance(){
-        cout<<name<< " is present"<<endl;
+    void markAttedance() {
+        cout << name << " is present" << endl;
     }
-
 };
 
 class EngineeringStudent: public Student{
      public:
-     string name;
-     int a;
 
      void attendentLab(){
           cout<<" Lab attendent by "<<name<<endl;
@@ -28,9 +25,9 @@ int main(){
      EngineeringStudent *es1 = new EngineeringStudent();
 
      es1->name = "Manish";
-     es1->a = 20;
+     es1->age = 20;
 
-     es1->markAttendance();
+     es1->markAttedance();
      es1->attendentLab();
 
      return 0;
