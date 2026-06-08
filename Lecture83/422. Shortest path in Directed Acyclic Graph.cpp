@@ -4,7 +4,7 @@ class Solution {
     vector<int> shortestPath(int V, int E, vector<vector<int>>& edges) {
         // code here
         vector<pair<int,int>>adj[V];
-        vector<int>InDegree(V,0);
+        vector<int>InDegree(V,0); 
 
         for(auto edge: edges){
             int u = edge[0];
