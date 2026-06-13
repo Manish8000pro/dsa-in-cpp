@@ -49,6 +49,7 @@ public:
             return 0;
         }
 
+        // here return the path and Euler circut 
         return CountOdd ? 1:2;
     }
 };
