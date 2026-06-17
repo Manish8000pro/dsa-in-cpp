@@ -1,7 +1,7 @@
 // 472. Critical Connections in a Network
 class Solution {
 public:
-
+    // finding the bridge
     void findBridge(vector<int>adj[],int node,int parent,vector<int>&Disc,vector<int>&Low,vector<bool>&visited,int &timer,vector<vector<int>>&bridge){
         Disc[node] = Low[node] = timer;
         visited[node] = 1;
