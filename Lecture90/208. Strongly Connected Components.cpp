@@ -21,7 +21,7 @@ void DFS(vector<int>adj[],int node,vector<bool>&visited){
 int kosaraju(int V, vector<vector<int>>& adj) {
     //toplogocial sort using DFS 
     // reverse the edges 
-    // 
+    // stack
 
     stack<int>s;
     vector<bool>visited(V,0);
