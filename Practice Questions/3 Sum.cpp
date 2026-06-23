@@ -23,7 +23,7 @@ vector<vector<int>> findThreeSum(vector<int>& nums) {
         if(sum==0){
             ans.push_back({nums[i],nums[left],nums[right]});
 
-        // skip the all duplicate second number 
+        // skip the all duplicate second  number 
 
         int leftValue = nums[left];
         int rightValue = nums[right];
