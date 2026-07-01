@@ -15,6 +15,7 @@ public:
                 ans.push_back(newInterval);
                 newInterval = interval;
             }
+            // Overlap
             else{
                 newInterval[0] = min(interval[0],newInterval[0]);
                 newInterval[1] = max(interval[1],newInterval[1]);
