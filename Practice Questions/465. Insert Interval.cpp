@@ -10,7 +10,7 @@ public:
             if(interval[1]<newInterval[0]){
                 ans.push_back(interval);
             }
-            //after 
+            //after newInterval
             else if(interval[0]>newInterval[1]){
                 ans.push_back(newInterval);
                 newInterval = interval;
