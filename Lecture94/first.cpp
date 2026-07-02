@@ -6,3 +6,6 @@
 // Haversine Algo.
 // Dynamic pricing 
 // UML Diagram
+//  SOLID principles + Clean Code
+//                        |
+//             1.strategy  2.factors 3.Singleton
