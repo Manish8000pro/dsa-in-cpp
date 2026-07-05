@@ -2,7 +2,7 @@
 int firstRepeatingElement(vector<int>& arr) {
     // Your code here
     unordered_map<int,int>freq;
-
+    
     for(int x : arr){
         freq[x]++;
     }
