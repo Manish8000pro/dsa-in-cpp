@@ -55,3 +55,8 @@ int climbStairs(int n) {
 
     return dp[n];
 }
+
+// =====================================================
+// space otimization of climbing stairs 
+// Time complexity = o(n)
+// space complexity = o(1);
