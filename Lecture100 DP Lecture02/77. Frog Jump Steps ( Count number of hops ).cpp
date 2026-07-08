@@ -12,4 +12,4 @@ int countHops(int n) {
 	}
 
 	return countHops(n-1)+countHops(n-2)+countHops(n-3);  
-}
+} 
