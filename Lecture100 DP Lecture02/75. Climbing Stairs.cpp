@@ -60,3 +60,22 @@ int climbStairs(int n) {
 // space otimization of climbing stairs 
 // Time complexity = o(n)
 // space complexity = o(1);
+int climbStairs(int n) {
+    // Your code here
+
+    if(n<=2)
+    return n;
+
+    vector<int>dp(3);
+    dp[0] = 0;
+    dp[1] = 1;
+    dp[2] = 2;
+
+    for(int i=3;i<=n;i++){
+        dp[0] = dp[1];
+        dp[1] = dp[2];
+        dp[2] = dp[0]+dp[1];
+        
+    }
+    return dp[2];
+}
