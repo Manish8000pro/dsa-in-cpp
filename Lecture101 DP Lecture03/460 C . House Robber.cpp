@@ -1,5 +1,5 @@
 //460. House Robber 
-// bottom up approach 
+// bottom up approach
 class Solution {
 public:
     int rob(vector<int>& nums) {
