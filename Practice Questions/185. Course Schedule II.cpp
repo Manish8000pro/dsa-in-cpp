@@ -24,11 +24,6 @@ public:
         vector<int>order;
 
         while(!q.empty()){
-            // queue: Total Number of avaialble courses which we can do in this current semester
-            // k: at most k course you can do in this semester
-            // int totalCourses = q.size();
-            // totalCourses = min(totalCourses,n);
-            // totalSemster++;
 
             int node = q.front();
             q.pop();
