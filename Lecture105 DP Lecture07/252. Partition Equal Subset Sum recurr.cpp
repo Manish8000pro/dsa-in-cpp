@@ -20,7 +20,6 @@ bool canPartition(vector<int>& arr) {
         target+=arr[i];
     }
 
-
     if(target%2)
     return 0;
 
