@@ -14,7 +14,7 @@ public:
 
         if(buy==2){
             // ya toh mein nahi purchase karunga, ya mein buy karunga, par mein short sellin wala buy karunga
-        return dp[index][buy][transaction] = max(maximumProfit(index+1,2,transaction,n,prices,dp),max(-prices[index]+maximumProfit(index+1,0,transaction,n,prices,dp),maximumProfit(index+1,1,transaction,n,prices,dp)));
+        return dp[index][buy][transaction] = max(maximumProfit(index+1,2,transaction,n,prices,dp),max(-prices[index]+maximumProfit(index+1,0,transaction,n,prices,dp),prices[index]+maximumProfit(index+1,1,transaction,n,prices,dp)));
 
         }
         else if(buy==1){
