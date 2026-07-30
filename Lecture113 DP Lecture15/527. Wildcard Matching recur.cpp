@@ -8,7 +8,7 @@ public:
         if(n==0 && m)
         return 0;
 
-        // m==0 , n exist krta hai ,second string second string ke saare ke saare elememnt aage * answer , nhi to zero
+        // m==0  , n exist krta hai ,second string second string ke saare ke saare elememnt aage * answer , nhi to zero
 
         if(m==0){
            for(int k=0;k<n;k++)
