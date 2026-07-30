@@ -5,7 +5,7 @@ public:
         if(m==0 && n==0)
         return 1;
 
-        if(n==0 & m)
+        if(n==0 && m)
         return 0;
 
         // m==0 , n exist krta hai ,second string second string ke saare ke saare elememnt aage * answer , nhi to zero
