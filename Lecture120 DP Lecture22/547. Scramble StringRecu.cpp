@@ -1,4 +1,5 @@
 //547. Scramble String
+// This gives the time limit exceeded
 class Solution {
 public:
     bool isScrambleString(string s1,string s2){
