@@ -15,7 +15,7 @@ public:
             }
         }
 
-        int result = INT_MAX;
+        int result = INT_MAX; 
 
         for(int j=0;j<n;j++){
             result = min(result,matrix[0][j]);
