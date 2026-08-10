@@ -1,24 +1,23 @@
-//551. Cherry Pickup I 
-// Recursive
 class Solution {
 public:
     int findMaximumCherryPick(int r1,int c1,int r2,int c2,int n,vector<vector<int>>&grid){
         // base case
-        if(r1>n || r2>n || c1>n || c2>n){
-            return INT_MIN;
-        }
-
-        if(grid[r1][c1]==-1 || grid[r2][c2]==-1)
+        if(r1>=n || r2>=n || c1>=n || c2>=n)
         return INT_MIN;
 
-        // I have reached my target 
+        if(grid[r1][c1]== -1 || grid[r2][c2]==-1)
+        return INT_MIN;
+
+        // I have reached my tatget
         if(r1==n-1 && c1==n-1)
         return grid[n-1][n-1];
+
 
         int cherries = grid[r1][c1];
 
         if(r1!=r2 || c1!=c2)
-        cherries+=grid[r1][c1];
+        cherries+= grid[r2][c2];
+
 
         int DD = findMaximumCherryPick(r1+1,c1,r2+1,c2,n,grid);
         int DR = findMaximumCherryPick(r1+1,c1,r2,c2+1,n,grid);
