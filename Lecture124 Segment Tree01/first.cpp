@@ -30,5 +30,8 @@ class SegmentTree{
 }
 
 int main(){
+    vector<int>arr = {1,5,2,6,91,8,6,8,90,11,23,10,2,4,8,19};
 
+    SegmentTree st(arr);
+    int n = arr.size();
 }
