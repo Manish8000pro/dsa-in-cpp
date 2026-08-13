@@ -27,6 +27,37 @@ class SegmentTree{
         tree[node] = tree[2*node+1]+tree[2*node+2];
         
     }
+
+    int rangeQuerry(int node,int start,int end,int left ,int right){
+        // 1: out of range 
+        if(end<left || start<right){
+            return 0;
+        }
+        //2: completely range ke ander
+        if(left<=start && end<=right){
+            return tree[node];
+        }
+        // 3: partial range 
+        int mid = start+(end-start)/2;
+
+        int leftSum = rangeQuerry(2*node+1,start,mid,left,right);
+        int rightSum = rangeQuerry(2*node+2,mid+1,end,left,right);
+
+        return leftSum+rightSum;
+    }
+
+    void updateQuerry(int node,int start,int end,int index,int val){
+        if(start==end){
+            tree[node] = val;
+            return;
+        }
+
+        int mid = start+(end-start)/2;
+
+        if(index<=mid){
+            updateQuerry(2*node+1,start,mid,index,val)
+        }
+    }
 }
 
 int main(){
@@ -34,4 +65,8 @@ int main(){
 
     SegmentTree st(arr);
     int n = arr.size();
+
+    // rangeQuery kya answer kya h 
+    // left 3, right 8
+    cout<<st.
 }
