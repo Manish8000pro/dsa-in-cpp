@@ -1,4 +1,5 @@
 #include<iostream>
+#include vector
 using namespace std;
 
 class SegmentTree{
@@ -30,7 +31,7 @@ class SegmentTree{
 
     int rangeQuerry(int node,int start,int end,int left ,int right){
         // 1: out of range 
-        if(end<left || start<right){
+        if(end<left || start>right){
             return 0;
         }
         //2: completely range ke ander
