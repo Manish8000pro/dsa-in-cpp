@@ -75,4 +75,7 @@ int main(){
     // left 3, right 8
     cout<<st.rangeQuerry(0,0,n-1,3,8);
     cout<<endl;
+    st.updateQuerry(0,0,n-1,4,5);
+    cout<<endl;
+    cout<<st.rangeQuerry(0,0,n-1,3,8);
 }
