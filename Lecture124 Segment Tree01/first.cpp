@@ -74,5 +74,5 @@ int main(){
     // rangeQuery kya answer kya h 
     // left 3, right 8
     cout<<st.rangeQuerry(0,0,n-1,3,8);
-    cunt<<endl;
+    cout<<endl;
 }
