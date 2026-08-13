@@ -55,10 +55,15 @@ class SegmentTree{
         int mid = start+(end-start)/2;
 
         if(index<=mid){
-            updateQuerry(2*node+1,start,mid,index,val)
+            updateQuerry(2*node+1,start,mid,index,val);
         }
+        else{
+            updateQuerry(2*node+2,mid+1,end,index,val);
+        }
+
+        tree[node] = tree[2*node+1]+tree[2*node+2];
     }
-}
+};
 
 int main(){
     vector<int>arr = {1,5,2,6,91,8,6,8,90,11,23,10,2,4,8,19};
@@ -68,5 +73,6 @@ int main(){
 
     // rangeQuery kya answer kya h 
     // left 3, right 8
-    cout<<st.
+    cout<<st.rangeQuerry(0,0,n-1,3,8);
+    cunt<<endl;
 }
