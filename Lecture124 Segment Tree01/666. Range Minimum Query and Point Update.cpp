@@ -77,6 +77,6 @@ public:
     int query(int left, int right) {
         // Your code here
 
-        return rangeQuerry(0,0,n-1,left,right);
+        return rangeQuerry(0,0,n-1,left,right); 
     }
 };
