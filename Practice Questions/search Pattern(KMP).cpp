@@ -62,7 +62,7 @@ class Solution {
 		               j = LPS[j - 1];
 		           }
 		       }
-		 }
+		}
 
 		   return ans;
     }
