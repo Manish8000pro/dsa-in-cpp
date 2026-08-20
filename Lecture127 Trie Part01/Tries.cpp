@@ -25,7 +25,22 @@ class Trie{
         root = new TrieNode();
     }
 
-    // 
+    // insert
+
+
+    void insert(string word){
+        TrieNode*curr = root;
+
+        for(char ch: word){
+            int index = ch-'a';
+
+            if(curr->children[index]==NULL){
+                curr->children[index] = new TrieNode();
+            }
+            curr = curr->children[index];
+        }
+        curr->isEnd = true;
+    }
 }
 
 int main(){
