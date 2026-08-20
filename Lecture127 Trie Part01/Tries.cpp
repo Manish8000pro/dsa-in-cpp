@@ -83,7 +83,7 @@ int main(){
     trie.insert("apple");
     trie.insert("apps");
     trie.insert("base");
-    trie.insert("back");\
+    trie.insert("back");
     cout<<endl;
 
     cout<<trie.search("car")<<endl;
