@@ -71,7 +71,7 @@ class Trie{
 
         return true;
     }
-};
+}; 
 
 int main(){
     Trie trie;
