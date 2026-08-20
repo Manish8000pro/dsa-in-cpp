@@ -92,7 +92,7 @@ int main(){
     cout<<trie.search("ba")<<endl;
     cout<<trie.search("base")<<endl;
     cout<<trie.search("app")<<endl;
-    cout<<endl;
+    cout<<endl; 
 
     cout<<trie.prefix("car")<<endl;
     cout<<trie.prefix("card")<<endl;
