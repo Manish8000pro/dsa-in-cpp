@@ -101,6 +101,5 @@ int main(){
     cout<<trie.prefix("app")<<endl;
     cout<<trie.prefix("apk")<<endl;
 
-
     return 0;
 }
