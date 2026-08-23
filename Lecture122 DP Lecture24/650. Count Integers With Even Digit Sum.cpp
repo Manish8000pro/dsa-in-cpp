@@ -13,4 +13,4 @@ public:
         return sumOfDigit%2? (num-1)/2 : num/2;
         
     }
-};
+}; 
