@@ -1,7 +1,7 @@
 //652. Sum of Digits from 1 to n
 class Solution {
 public:
-    long long sumOfDigits(long long n) {
+    long long sumOfDigits(long long n) { 
         // Your code here
         if(n<10)
         return n*(n+1)/2;
