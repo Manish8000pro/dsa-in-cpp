@@ -7,7 +7,7 @@ public:
         return n*(n+1)/2;
 
         int power =1;
-        int digit = 0;
+        int digit = 0; 
 
         while(power*10<=n){
             power*=10;
