@@ -20,4 +20,4 @@ public:
 
         return firstElement*(sumElement)+ ((firstElement*(firstElement-1))/2)*power+ firstElement*(remainingElement+1)+ sumOfDigits(remainingElement);
     }
-};
+}; 
