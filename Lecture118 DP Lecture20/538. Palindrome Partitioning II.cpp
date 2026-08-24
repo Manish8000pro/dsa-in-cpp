@@ -5,7 +5,7 @@ public:
         // Your code here
         int n = s.size();
 
-        if(n==1)
+        if(n==1) 
         return 0;
 
         vector<vector<bool>>pallindrome(n,vector<bool>(n,0));
