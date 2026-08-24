@@ -25,7 +25,7 @@ class Trie{
         root = new TrieNode();
     }
 
-    // insert
+    // insert 
 
     void insert(string word){
         TrieNode*curr = root;
