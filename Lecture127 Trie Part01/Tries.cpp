@@ -52,7 +52,6 @@ class Trie{
             }
             curr = curr->children[index];
         }
-
         return curr->isEnd;
     }
 
