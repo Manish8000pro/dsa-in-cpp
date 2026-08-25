@@ -35,3 +35,49 @@ void getResult(TrieNode* curr, string &word, vector<string>&ans){
             }
         }
 }
+vector<vector<string>> displayContacts(int n, string contact[], string s) {
+        // Your code here
+        
+        TrieNode *root = new TrieNode();
+         
+         for(int i=0;i<n;i++){
+            insert(root, contact[i]);
+         }
+
+         // prefix answer niklna
+         vector<vector<string>>result;
+         string prefix = "";
+         bool isMatch = true;
+
+         TrieNode *curr = root;
+
+         for(char ch: s){
+
+            int index = ch-'a';
+            prefix.push_back(ch);
+
+            if(isMatch==false){
+                result.push_back({"0"});
+                continue;
+            }
+
+            if(curr->children[index]==NULL){
+                result.push_back({"0"});
+                isMatch = false;
+                continue;
+            }
+
+
+            curr = curr->children[index];
+            vector<string>ans;
+            string word = prefix;
+            getResult(curr,word,ans);
+            result.push_back(ans);
+         }
+
+
+         delete root;
+
+         return result;
+
+    }
