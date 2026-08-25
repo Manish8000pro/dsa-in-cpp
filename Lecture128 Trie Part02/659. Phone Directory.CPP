@@ -34,4 +34,4 @@ void getResult(TrieNode* curr, string &word, vector<string>&ans){
                 word.pop_back();
             }
         }
-    }
+}
