@@ -35,6 +35,7 @@ void getResult(TrieNode* curr, string &word, vector<string>&ans){
             }
         }
 }
+
 vector<vector<string>> displayContacts(int n, string contact[], string s) {
         // Your code here
         
@@ -80,4 +81,5 @@ vector<vector<string>> displayContacts(int n, string contact[], string s) {
 
          return result;
 
-    }
+};
+
