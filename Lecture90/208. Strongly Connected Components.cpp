@@ -1,5 +1,5 @@
 // 208. Strongly Connected Components 
-//
+// solution
 void topSort(vector<vector<int>>&adj,int node,stack<int>&s,vector<bool>&visited){
     visited[node] = 1;
     
