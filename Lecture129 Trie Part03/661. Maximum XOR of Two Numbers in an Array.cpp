@@ -1,5 +1,5 @@
 // 661. Maximum XOR of Two Numbers in an Array
-class TrieNode{
+class TrieNode{ 
     public:
 
     TrieNode *children[2];
