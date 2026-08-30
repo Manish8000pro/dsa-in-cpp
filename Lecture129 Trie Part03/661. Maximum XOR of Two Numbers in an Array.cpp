@@ -45,7 +45,7 @@ public:
                 curr = curr->children[bit];
             }
         }
-        return answer;
+        return answer; 
     }
 
     int findMaximumXOR(vector<int>& nums) {
