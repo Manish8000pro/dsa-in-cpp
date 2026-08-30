@@ -63,6 +63,6 @@ public:
             result = max(result,maxOr);
         }
         delete root;
-        return result;
+        return result; 
     }
 };
