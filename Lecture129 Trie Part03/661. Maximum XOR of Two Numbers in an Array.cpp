@@ -1,6 +1,6 @@
 // 661. Maximum XOR of Two Numbers in an Array
 class TrieNode{ 
-    public:
+    public: 
 
     TrieNode *children[2];
 
