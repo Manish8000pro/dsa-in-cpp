@@ -29,3 +29,21 @@ public:
             curr = curr->children[bit];
         }
     }
+
+    int getMaxXOr(TrieNode *curr,int num){
+        int answer = 0;
+
+        for(int i=30;i>=0;i--){
+            int bit = (num>>i) & 1;
+            int opposite = 1-bit;
+
+            if(curr->children[opposite]){
+                answer = answer | (1<<i);
+                curr = curr->children[opposite];
+            }
+            else{
+                curr = curr->children[bit];
+            }
+        }
+        return answer;
+    }   
