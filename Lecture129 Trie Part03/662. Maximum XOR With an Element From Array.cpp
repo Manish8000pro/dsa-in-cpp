@@ -15,3 +15,17 @@ class TrieNode{
         delete children[1];
     }
 };
+class Solution {
+public:
+    void insert(TrieNode *curr,int num){
+        // total 31 bit insert
+
+        for(int i=30;i>=0;i--){
+            int bit = (num>>i)&1;
+
+            if(curr->children[bit]==NULL){
+                curr->children[bit] = new TrieNode();
+            }
+            curr = curr->children[bit];
+        }
+    }
