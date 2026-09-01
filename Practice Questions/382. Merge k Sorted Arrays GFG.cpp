@@ -1,6 +1,6 @@
 //Merge k Sorted Arrays
 // This problme solved on GFG
-// GFG solution
+// GFG solution 
 class Solution {
   public:
     vector<int> mergeArrays(vector<vector<int>> &mat) {
