@@ -1,6 +1,6 @@
 //396. Check Tree Traversal
 // this Question on strike 
-// This not running in strike
+// This not running in strike this is the wrong ans 
 class Solution{
 public:
     unordered_map<int,int>inorderIndex;
