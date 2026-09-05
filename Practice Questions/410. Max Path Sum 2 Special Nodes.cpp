@@ -39,4 +39,18 @@ public:
         
         return root->data + solve(root->right,ans);
     }
-    
+    int maxPathSum(Node* root) {
+        // Your code here
+        int ans = INT_MIN;
+
+        int rootPath = solve(root,ans);
+        
+        // Root itself is special if it has exactly one child
+        if(!root->left || !root->right){
+            ans = max(ans,rootPath);
+        }
+
+        return ans;
+
+    }
+};
