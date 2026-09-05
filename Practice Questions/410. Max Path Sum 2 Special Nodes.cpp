@@ -39,3 +39,4 @@ public:
         
         return root->data + solve(root->right,ans);
     }
+    
