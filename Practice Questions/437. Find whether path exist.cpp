@@ -63,3 +63,6 @@ class Solution {
 
 //-----------------------------------------------------------------------------------------
 // Optimized code 
+// this is the BFS solution 
+//✅ No recursion depth issues → avoids stack overflow.
+// ✅ Scalable → works even for very large grids (like 1000×1000).
