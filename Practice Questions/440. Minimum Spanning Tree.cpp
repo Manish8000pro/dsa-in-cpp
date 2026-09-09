@@ -38,3 +38,15 @@ public:
                 [](vector<int>&a,vector<int>&b){
                 return a[2]<b[2];
             });
+
+        //initlize DSU
+
+        parent.resize(V);
+        size.assign(V,1);
+
+        for (int i = 0; i < V; i++) {
+            parent[i] = i;
+        }
+
+        int mstWeight = 0;
+        int edgesUsed = 0;            
