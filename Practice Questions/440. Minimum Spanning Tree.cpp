@@ -29,4 +29,12 @@ public:
         size[a]+=size[b];
         
         return true;
-    }        
+    }
+    
+    int spanningTree(int V, vector<vector<int>>& edges) {
+        // code here
+        // sort edes by weight 
+        sort(edges.begin(),edges.end(),
+                [](vector<int>&a,vector<int>&b){
+                return a[2]<b[2];
+            });
