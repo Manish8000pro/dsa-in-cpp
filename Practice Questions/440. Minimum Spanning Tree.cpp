@@ -57,3 +57,19 @@ public:
             int u = edge[0];
             int v = edge[1];
             int w = edge[2];
+
+            // take edge only if it dosent create cycle
+
+            if(unite(u,v)){
+                mstWeight+=w;
+                edgesUsed++;
+
+                // MST contains exactly V-1 edges
+
+                if(edgesUsed==V-1)
+                break;
+            }
+        }
+        return mstWeight;
+    }
+};
