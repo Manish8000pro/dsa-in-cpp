@@ -49,4 +49,11 @@ public:
         }
 
         int mstWeight = 0;
-        int edgesUsed = 0;            
+        int edgesUsed = 0; 
+        
+        // kruskal 
+        for(auto&edge:edges){
+            
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
