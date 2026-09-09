@@ -10,3 +10,12 @@ public:
 
         return parent[x] = find(parent[x]);
     }
+
+    bool unite(int a,int b){
+        a = find(a);
+        b = find(b);
+
+        // Already connected -> cycle
+
+        if(a==b)
+        return false;
