@@ -19,3 +19,14 @@ public:
 
         if(a==b)
         return false;
+
+        // Attach smaller componant to large
+
+        if(size[a]<size[b])
+        swap(a,b);
+
+        parent[b] = a;
+        size[a]+=size[b];
+        
+        return true;
+    }        
