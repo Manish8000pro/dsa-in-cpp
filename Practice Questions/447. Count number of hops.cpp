@@ -17,3 +17,19 @@ public:
     }
 };
 
+// ==========================================Another way ========================
+
+class Solution {
+public:
+    long long countWays(int n) {
+        
+        if(n==0)
+        return 1;
+
+        if(n<=2)
+        return n;
+
+        return countWays(n-1) + countWays(n-2)+countWays(n-3);
+
+    }
+};
