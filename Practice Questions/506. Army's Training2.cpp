@@ -1,6 +1,7 @@
 //506. Army's Training 
 // Solving with DP
 // Time complexity o(n*3*4) = o(n)
+// space complexity o(n)
 class Solution {
 public:
     int solve(int day,int last,vector<vector<int>>&points,int n,vector<vector<int>>&dp){
