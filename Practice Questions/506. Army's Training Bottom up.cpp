@@ -8,7 +8,7 @@ public:
         // day 0
         dp[0][0]=points[0][0];
         dp[0][1]=points[0][1];
-        dp[0][2]=points[0][2];
+        dp[0][2]=points[0][2]; 
 
         // remaining days 
         for(int day = 1;day<n;day++){
