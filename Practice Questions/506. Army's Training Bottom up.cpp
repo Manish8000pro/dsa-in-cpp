@@ -12,7 +12,7 @@ public:
 
         // remaining days 
         for(int day = 1;day<n;day++){
-            // Todays = Running 
+            // Todays = Running  
             dp[day][0] = points[day][0]+max(dp[day-1][1],dp[day-1][2]);
             // Todays = Combact 
             dp[day][1] = points[day][1]+max(dp[day-1][0],dp[day-1][2]);
