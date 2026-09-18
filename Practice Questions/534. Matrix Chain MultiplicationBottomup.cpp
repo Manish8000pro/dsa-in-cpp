@@ -1,6 +1,7 @@
 //534. Matrix Chain Multiplication
 // this is not have space optimize
 // time complexity is o(n^3)
+// space complexity is o(n^2)
 class Solution {
 public:
     int matrixMultiplication(vector<int>& arr) {
