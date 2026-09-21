@@ -35,3 +35,47 @@ public:
             tree[2 * node + 1] +
             tree[2 * node + 2];
     }
+
+    // Update
+    void update(int index, int val) {
+        updateHelper(0, 0, n - 1, index, val);
+    }
+
+
+    // Recursive update helper
+    void updateHelper(int node, int start, int end,
+                      int index, int val) {
+
+        // Reached the required index
+        if(start == end) {
+
+            // 0 -> 1
+            // non-zero -> 0
+            tree[node] = (val == 0);
+
+            return;
+        }
+
+        int mid = start + (end - start) / 2;
+
+        // Go left
+        if(index <= mid) {
+            updateHelper(
+                2 * node + 1,
+                start,
+                mid,
+                index,
+                val
+            );
+        }
+
+        // Go right
+        else {
+            updateHelper(
+                2 * node + 2,
+                mid + 1,
+                end,
+                index,
+                val
+            );
+        }
