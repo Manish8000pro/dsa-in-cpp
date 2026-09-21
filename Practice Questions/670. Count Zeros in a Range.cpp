@@ -124,3 +124,6 @@ public:
             left,
             right
         );
+        return leftZeros + rightZeros;
+    }
+};
