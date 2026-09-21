@@ -79,3 +79,31 @@ public:
                 val
             );
         }
+        // Recalculate current node
+        tree[node] =
+            tree[2 * node + 1] +
+            tree[2 * node + 2];
+    }
+
+
+    // Query
+    int query(int left, int right) {
+        return queryHelper(0, 0, n - 1, left, right);
+    }
+
+
+    // Recursive query helper
+    int queryHelper(int node, int start, int end,
+                    int left, int right) {
+
+        // No overlap
+        if(end < left || start > right) {
+            return 0;
+        }
+
+        // Complete overlap
+        if(left <= start && end <= right) {
+            return tree[node];
+        }
+
+        int mid = start + (end - start) / 2;
