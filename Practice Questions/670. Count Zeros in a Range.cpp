@@ -107,3 +107,20 @@ public:
         }
 
         int mid = start + (end - start) / 2;
+        // Query left child
+        int leftZeros = queryHelper(
+            2 * node + 1,
+            start,
+            mid,
+            left,
+            right
+        );
+
+        // Query right child
+        int rightZeros = queryHelper(
+            2 * node + 2,
+            mid + 1,
+            end,
+            left,
+            right
+        );
