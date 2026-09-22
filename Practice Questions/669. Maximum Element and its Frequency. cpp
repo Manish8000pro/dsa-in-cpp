@@ -104,3 +104,45 @@ public:
         // Update current node
         tree[node] = combine(tree[2 * node + 1],tree[2 * node + 2]);
     }
+
+
+    // --------------------------------
+    // Query
+    // --------------------------------
+    vector<int> query(int left, int right) {
+
+        return queryHelper(0,0,n - 1,left,right);
+    }
+
+
+    vector<int> queryHelper(int node,int start,int end,int left,int right) {
+
+        // No overlap
+        if(end < left || start > right) {
+
+            // Identity:
+            // maximum = INT_MIN
+            // frequency = 0
+            return {INT_MIN, 0};
+        }
+
+
+        // Complete overlap
+        if(left <= start && end <= right) {
+
+            return tree[node];
+        }
+
+
+        int mid = start + (end - start) / 2;
+
+        // Query left child
+        vector<int> leftAns = queryHelper(2 * node + 1,start,mid,left,right);
+
+        // Query right child
+        vector<int> rightAns = queryHelper(2 * node + 2,mid + 1,end,left,right);
+
+        // Combine both answers
+        return combine(leftAns, rightAns);
+    }
+};
