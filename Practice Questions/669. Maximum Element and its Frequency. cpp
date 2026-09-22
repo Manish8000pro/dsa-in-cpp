@@ -17,3 +17,25 @@ public:
 
         build(0, 0, n - 1, arr);
     }
+
+
+    // --------------------------------
+    // Combine two nodes
+    // --------------------------------
+    vector<int> combine(vector<int> left,vector<int> right) {
+
+        // Left maximum is greater
+        if(left[0] > right[0]) {
+            return left;
+        }
+
+        // Right maximum is greater
+        if(right[0] > left[0]) {
+            return right;
+        }
+
+        // Both maximums are equal
+        return {
+            left[0],left[1] + right[1]
+        };
+    }
