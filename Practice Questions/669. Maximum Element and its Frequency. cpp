@@ -39,3 +39,30 @@ public:
             left[0],left[1] + right[1]
         };
     }
+
+
+    // --------------------------------
+    // Build
+    // --------------------------------
+    void build(int node, int start, int end,vector<int>& arr) {
+
+        // Leaf node
+        if(start == end) {
+
+            // {value, frequency}
+            tree[node] = {arr[start], 1};
+
+            return;
+        }
+
+        int mid = start + (end - start) / 2;
+
+        // Build left child
+        build(2 * node + 1,start,mid,arr);
+
+        // Build right child
+        build(2 * node + 2,mid + 1,end,arr);
+
+        // Combine both children
+        tree[node] = combine(tree[2 * node + 1],tree[2 * node + 2]);
+    }
