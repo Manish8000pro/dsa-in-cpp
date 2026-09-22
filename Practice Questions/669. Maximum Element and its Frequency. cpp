@@ -66,3 +66,41 @@ public:
         // Combine both children
         tree[node] = combine(tree[2 * node + 1],tree[2 * node + 2]);
     }
+
+
+    // --------------------------------
+    // Update
+    // --------------------------------
+    void update(int index, int val) {
+
+        updateHelper(0,0,n - 1,index,val);
+    }
+
+
+    void updateHelper(int node,int start,int end,int index,int val) {
+
+        // Reached the required index
+        if(start == end) {
+
+            tree[node] = {val, 1};
+
+            return;
+        }
+
+        int mid = start + (end - start) / 2;
+
+        // Go left
+        if(index <= mid) {
+
+            updateHelper(2 * node + 1,start,mid,index,val);
+        }
+
+        // Go right
+        else {
+
+            updateHelper( 2 * node + 2,mid + 1,end,index,val);
+        }
+
+        // Update current node
+        tree[node] = combine(tree[2 * node + 1],tree[2 * node + 2]);
+    }
