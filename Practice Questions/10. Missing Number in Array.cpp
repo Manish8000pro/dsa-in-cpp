@@ -1,5 +1,6 @@
 //10. Missing Number in Array
 // Time complexity o(n^2)
+// space complexity O(1);
 int findMissingPositive(vector<int>& arr) {
     // Your code here
     int n  = arr.size();
