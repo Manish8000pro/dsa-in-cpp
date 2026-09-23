@@ -1,4 +1,7 @@
 //10. Missing Number in Array Second approach 
+// Time complexity o(n log n)
+
+
 int findMissingPositive(vector<int>& arr) {
     // Your code here
     sort(arr.begin(),arr.end());
