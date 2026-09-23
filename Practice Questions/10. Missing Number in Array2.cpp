@@ -1,6 +1,6 @@
 //10. Missing Number in Array Second approach 
 // Time complexity o(n log n)
-
+// space complexity o(1)
 
 int findMissingPositive(vector<int>& arr) {
     // Your code here
