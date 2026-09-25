@@ -1,5 +1,6 @@
 //40. Remove Duplicates from Sorted Array
 // Time complexity  o(n)
+// space complexity o(1)
 int removeDuplicates(vector<int>& arr) {
     // Your code here
     int n  = arr.size();
