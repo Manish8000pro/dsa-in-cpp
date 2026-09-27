@@ -1,5 +1,6 @@
 //59. Count Zeros in a Sorted Matrix
 // Time complexity o(n*m)
+// space complexity o(1)
 int countZeroes(const vector<vector<int>>& mat) {
     int n  = mat.size();
     int count =0;
