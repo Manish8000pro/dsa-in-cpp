@@ -25,7 +25,7 @@ int minSwaps(vector<int>& arr, int k) {
         }
         
         ans = min(ans,bad);
-    }
+    } 
 
     return ans;
 }
