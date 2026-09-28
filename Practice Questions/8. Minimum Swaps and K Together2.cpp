@@ -2,7 +2,7 @@
 int minSwaps(vector<int>& arr, int k) {
     int n = arr.size();
 
-    int good = 0;
+    int good = 0; 
 
     for(int num: arr){
         if(num<=k){
