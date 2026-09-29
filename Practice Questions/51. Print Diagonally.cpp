@@ -22,4 +22,4 @@ vector<int> downwardDiagonal(int N, vector<vector<int>>& A) {
             }
         }
         return ans;
-}
+} 
