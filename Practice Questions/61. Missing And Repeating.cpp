@@ -1,5 +1,6 @@
 // 61. Missing And Repeating
 // Time complexity o(n)
+// space complexity o(n)
 vector<int> findTwoElement(vector<int>& arr) {
     int n = arr.size();
 
