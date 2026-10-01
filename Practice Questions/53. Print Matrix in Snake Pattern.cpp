@@ -1,5 +1,6 @@
 // 53. Print Matrix in Snake Pattern
 // Time complexity o(n^2)
+// space complexity o(1)
 vector<int> snakePattern(vector<vector<int>>& mat) {
     int n = mat.size();
     vector<int>ans;
