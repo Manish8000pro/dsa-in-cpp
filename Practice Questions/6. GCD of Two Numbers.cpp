@@ -1,4 +1,5 @@
 //76. GCD of Two Numbers
+// Time Complexity o(min(a,b))
 int gcd(int a, int b) {
     // Your code here
     int ans = 1;
