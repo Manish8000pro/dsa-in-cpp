@@ -10,5 +10,5 @@ int gcd(int a, int b) {
         }
     }
 
-    return ans;
+    return ans;  
 }
