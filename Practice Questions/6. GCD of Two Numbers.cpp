@@ -1,6 +1,6 @@
 //76. GCD of Two Numbers
 // Time Complexity o(min(a,b))
-// 
+// space complexity o(1)
 int gcd(int a, int b) {
     // Your code here
     int ans = 1;
