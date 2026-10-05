@@ -1,4 +1,5 @@
 //62. Frequencies in a Limited Array
+//Time complexity o(n)
 vector<int> frequencyCount(vector<int>& arr) {
     int n = arr.size();
 
