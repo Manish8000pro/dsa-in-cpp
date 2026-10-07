@@ -1,4 +1,5 @@
 //63. Majority Element
+// Time complexity o(n)
 int majorityElement(vector<int>& nums) {
     
     int n = nums.size();
