@@ -1,4 +1,6 @@
 //65. Smallest Window Containing 0, 1, and 2
+// Time complexity o(n^2)
+
 int smallestSubstring(string &S) {
     int n = S.size();
 
