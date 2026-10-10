@@ -1,4 +1,6 @@
 //96. Merge Lists Alternatingly
+// Time complexity o(min(n,m))
+
 /*
 struct ListNode {
     int val;
