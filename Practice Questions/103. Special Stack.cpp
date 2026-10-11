@@ -1,5 +1,6 @@
 // 103. Special Stacka
 // Time complexity: o(1) for all operations
+// Space complexity: o(n) for the stack
 class SpecialStack {
 private:
     stack<int> mainStack;
