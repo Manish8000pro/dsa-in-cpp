@@ -1,5 +1,6 @@
 //107. Baseball Game
 // Time Complexity: O(n)
+// Space Complexity: O(n)
 int calPoints(vector<string>& operations) {
     vector<int> st;
 
