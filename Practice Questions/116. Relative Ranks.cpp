@@ -10,3 +10,9 @@ vector<string> findRelativeRanks(vector<int>& score) {
         else if (i == 2) rankMap[sortedScore[i]] = "Bronze Medal";
         else rankMap[sortedScore[i]] = to_string(i + 1);
     }
+    vector<string> ans(n);
+    for (int i = 0; i < n; i++) {
+        ans[i] = rankMap[score[i]];
+    }
+    return ans;
+}
