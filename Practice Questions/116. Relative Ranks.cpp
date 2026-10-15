@@ -1,4 +1,5 @@
 //116. Relative Ranks
+// Time complexity: O(nlogn)
 vector<string> findRelativeRanks(vector<int>& score) {
     int n = score.size();
     vector<int> sortedScore = score;
