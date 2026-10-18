@@ -16,7 +16,7 @@ public:
         }
     }
     void pop() {
-    if(minStack.empty())
+    if(minStack.empty()) 
     return;
     int popped = mainStack.top();
     mainStack.pop();
