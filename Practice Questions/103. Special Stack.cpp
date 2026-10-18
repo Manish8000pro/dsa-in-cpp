@@ -25,7 +25,7 @@ public:
     }
 }
     int peek() {
-    if(mainStack.empty())
+    if(mainStack.empty()) 
     return -1;
 
     return mainStack.top();
