@@ -6,5 +6,5 @@ int fillCups(vector<int>& amount) {
 
    int largest = max({amount[0],amount[1],amount[2]});
 
-   return max(largest,(sum+1)/2);
+   return max(largest,(sum+1)/2); 
 }
