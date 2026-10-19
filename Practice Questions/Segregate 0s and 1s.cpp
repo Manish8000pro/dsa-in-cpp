@@ -1,6 +1,6 @@
 //36. Segregate 0s and 1s
 // strike Plateform 
-// 
+// Time complxity o(n)
 void segregate0and1(vector<int>& arr) {
     // Your code here
     int count0 = 0;
