@@ -1,5 +1,6 @@
 //268. Longest Common Substring Space optimization 
 // TOp soultion of LCSubstring
+
 int longestCommonSubstr(string s1, string s2) {
 
     int m = s1.size(),n = s2.size(),result = 0;
