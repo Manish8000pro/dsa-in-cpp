@@ -1,5 +1,6 @@
 //115. Make Array Zero by Subtracting Equ
 // time complexity o(nlogn)
+// space complexity o(n)
 int minimumOperations(vector<int>& nums) {
     set<int>s;
 
