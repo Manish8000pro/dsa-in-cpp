@@ -9,6 +9,8 @@ struct ListNode {
 };
 */
 
+// Time complexity o(N + N)
+
 long long multiplyTwoLists(ListNode* first, ListNode* second) {
     long long num1 = 0;
     long long num2 = 0;
