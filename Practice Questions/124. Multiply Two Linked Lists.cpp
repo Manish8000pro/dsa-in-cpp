@@ -10,6 +10,7 @@ struct ListNode {
 */
 
 // Time complexity o(N + N)
+// Space complexity o(1)
 
 long long multiplyTwoLists(ListNode* first, ListNode* second) {
     long long num1 = 0;
