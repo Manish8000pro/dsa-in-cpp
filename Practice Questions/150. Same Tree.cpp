@@ -10,6 +10,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+//Time O(N)
+
 bool isSameTree(TreeNode* p, TreeNode* q) {
     if(!p && !q)
     return true;
