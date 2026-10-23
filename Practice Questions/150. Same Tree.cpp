@@ -10,7 +10,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-//Time O(N)
+// Time O(N)
+// space o(H) for recursive stack
 
 bool isSameTree(TreeNode* p, TreeNode* q) {
     if(!p && !q)
