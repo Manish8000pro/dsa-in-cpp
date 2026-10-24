@@ -19,6 +19,7 @@ public:
 };
 */
 //Time complexity o(n)
+// Space complexity o(H)
 
 vector<int> preorder(Node* root) {
     vector<int> ans;
