@@ -18,6 +18,7 @@ public:
     }
 };
 */
+//Time complexity o(n)
 
 vector<int> preorder(Node* root) {
     vector<int> ans;
