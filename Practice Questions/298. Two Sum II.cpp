@@ -1,6 +1,6 @@
 //298. Two Sum II
 // this is the brute force approach
-// This approach gives the TLE On LeetCode
+// This approach gives the TLE On LeetCode 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
