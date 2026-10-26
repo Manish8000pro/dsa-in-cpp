@@ -10,6 +10,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time complexit o(n)
 int maxDepth(TreeNode* root) {
     // Base case
         if (root == nullptr) {
