@@ -11,6 +11,7 @@
  * };
  */
 // Time complexit o(n)
+// space complexity o(h)
 int maxDepth(TreeNode* root) {
     // Base case
         if (root == nullptr) {
