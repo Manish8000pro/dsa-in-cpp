@@ -10,6 +10,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+ 
 bool isMirror(TreeNode *left,TreeNode *right){
     // Both side are empty 
     if(left == nullptr && right==nullptr){
