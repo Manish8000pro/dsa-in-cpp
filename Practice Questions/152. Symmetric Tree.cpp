@@ -12,6 +12,7 @@
  */
 
  // Time complexity o(n)
+ // Space complexity o(h) or o(long n)
 bool isMirror(TreeNode *left,TreeNode *right){
     // Both side are empty 
     if(left == nullptr && right==nullptr){
