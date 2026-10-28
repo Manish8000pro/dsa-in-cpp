@@ -11,7 +11,7 @@
  * };
  */
 
- 
+ // Time complexity o(n)
 bool isMirror(TreeNode *left,TreeNode *right){
     // Both side are empty 
     if(left == nullptr && right==nullptr){
