@@ -10,6 +10,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time complexity o(n)
 
 int height(TreeNode *root, int&diameter){
     if(root == nullptr){
