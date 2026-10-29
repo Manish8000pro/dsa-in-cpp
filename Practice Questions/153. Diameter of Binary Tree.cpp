@@ -11,6 +11,7 @@
  * };
  */
 // Time complexity o(n)
+// space complexity o(h)
 
 int height(TreeNode *root, int&diameter){
     if(root == nullptr){
