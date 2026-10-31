@@ -7,6 +7,7 @@
 // };
 
 // Time complexity o(n)
+// space complexity o(h) 
 
 void solve(TreeNode* root,vector<int>&ans){
     // base case
