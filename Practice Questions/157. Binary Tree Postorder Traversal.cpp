@@ -5,6 +5,7 @@
 //     TreeNode *right;
 //     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 // };
+// Time complexity o(n);
 void solve(TreeNode *root,vector<int>&ans){
     if(root == nullptr){
         return;
