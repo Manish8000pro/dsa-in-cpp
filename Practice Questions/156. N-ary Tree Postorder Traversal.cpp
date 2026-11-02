@@ -18,6 +18,8 @@ public:
     }
 };
 */
+// Time complexity o(n);
+
 void solve(Node* root,vector<int>&ans){
     if(root==nullptr){
         return;
