@@ -6,7 +6,7 @@
 //     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 // };
 // Time complexity o(n);
-// space complexity O(h)
+// space complexity O(h);
 void solve(TreeNode *root,vector<int>&ans){
     if(root == nullptr){
         return;
