@@ -19,6 +19,7 @@ public:
 };
 */
 // Time complexity o(n);
+// space complexity o(h);
 
 void solve(Node* root,vector<int>&ans){
     if(root==nullptr){
