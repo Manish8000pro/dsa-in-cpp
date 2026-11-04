@@ -12,6 +12,7 @@
  * };
  */
 // Time complexity  o(n);
+// space complexity o(n);
 bool isCousins(TreeNode* root, int x, int y) {
 
     if(root == nullptr){
