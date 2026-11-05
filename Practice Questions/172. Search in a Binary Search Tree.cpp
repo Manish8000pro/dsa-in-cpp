@@ -10,6 +10,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time complexity: O(log n) in average case, O(n) in worst case
 TreeNode* searchBST(TreeNode* root, int val) {
     if(root == nullptr){
         return nullptr;
