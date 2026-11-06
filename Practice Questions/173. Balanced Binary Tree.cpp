@@ -10,6 +10,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time complexity O(n)
+
 int checkHeight(TreeNode* root){
     if(root == nullptr){
         return 0;
