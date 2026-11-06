@@ -11,6 +11,7 @@
  * };
  */
 // Time complexity O(n)
+// space complexity O(h);
 
 int checkHeight(TreeNode* root){
     if(root == nullptr){
