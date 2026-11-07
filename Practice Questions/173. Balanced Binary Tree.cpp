@@ -26,7 +26,7 @@ int checkHeight(TreeNode* root){
 
     int rightHeight = checkHeight(root->right);
 
-    if(rightHeight == -1){
+    if(rightHeight == -1){ 
         return -1;
     }
 
