@@ -15,7 +15,7 @@
 
 int checkHeight(TreeNode* root){
     if(root == nullptr){
-        return 0; 
+        return 0;  
     }
 
     int leftHeight = checkHeight(root->left);
