@@ -10,7 +10,7 @@ public:
             int u = edge[0];
             int v = edge[1];
             adj[v].push_back(u);
-            InDegree[u]++;
+            InDegree[u]++; 
         }
 
         // Kahn's algorithm
