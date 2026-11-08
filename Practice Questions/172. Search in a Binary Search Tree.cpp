@@ -9,7 +9,7 @@
  *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
- */
+ */ 
 // Time complexity: O(log n) in average case, O(n) in worst case
 // space complexity O(h) where h is the height of the tree
 TreeNode* searchBST(TreeNode* root, int val) {
