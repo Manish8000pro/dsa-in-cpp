@@ -14,7 +14,7 @@
 // space complexity O(h) where h is the height of the tree
 TreeNode* searchBST(TreeNode* root, int val) {
     if(root == nullptr){
-        return nullptr;
+        return nullptr; 
     }
 
     if(root->val==val){
