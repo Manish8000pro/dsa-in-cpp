@@ -11,6 +11,7 @@
  * };
  */
 // Time Complexity O(n) where n is the number of nodes in the binary tree
+// Space complexity O(h) wherre h is the height of the binary tree
 TreeNode* invertTree(TreeNode* root) {
     if(root == nullptr){
         return nullptr;
