@@ -10,6 +10,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time Complexity O(n) where n is the number of nodes in the binary tree
 TreeNode* invertTree(TreeNode* root) {
     if(root == nullptr){
         return nullptr;
