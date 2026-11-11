@@ -14,7 +14,7 @@ void dfs(vector<vector<int>>& image, int r, int c, int oldColor, int newColor) {
 }
 
 vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
-    int oldColor = image[sr][sc];
+    int oldColor = image[sr][sc]; 
     if (oldColor != color) {
         dfs(image, sr, sc , oldColor, color);
     }
