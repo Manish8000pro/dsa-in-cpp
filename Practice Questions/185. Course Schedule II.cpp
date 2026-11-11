@@ -9,7 +9,7 @@ public:
         for(auto edge: prerequisites){ 
             int u = edge[0];
             int v = edge[1];
-            adj[v].push_back(u);
+            adj[v].push_back(u); 
             InDegree[u]++;  
         }
 
