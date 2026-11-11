@@ -6,11 +6,11 @@ public:
          // adjacenecy List create kjiye
         vector<int>adj[n];
         vector<int>InDegree(n,0);
-        for(auto edge: prerequisites){
+        for(auto edge: prerequisites){ 
             int u = edge[0];
             int v = edge[1];
             adj[v].push_back(u);
-            InDegree[u]++; 
+            InDegree[u]++;  
         }
 
         // Kahn's algorithm
