@@ -23,3 +23,13 @@ public:
 			}
 		}
 	}
+	
+	
+	vector<vector<int>> permuteUnique(vector<int>& nums) {
+        // Code here 
+		vector<vector<int>>ans;
+		permutation(nums,0,nums.size(),ans);
+
+		return ans;
+    }
+};
