@@ -12,6 +12,7 @@
 
  */
 // Time complexity O(n); in worst case O(n.h) where h is the height of the tree
+// space complexity o(h) where h is the height of the treee 
 void dfs(TreeNode* root,string path,vector<string>&ans){
     if(root==nullptr){
         return;
