@@ -11,6 +11,7 @@
  * };
 
  */
+// Time complexity O(n);
 void dfs(TreeNode* root,string path,vector<string>&ans){
     if(root==nullptr){
         return;
