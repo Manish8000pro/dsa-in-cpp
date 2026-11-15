@@ -10,6 +10,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time complexity O(n);
 bool dfs(TreeNode* node,int val){
     if(!node){
        return true; 
