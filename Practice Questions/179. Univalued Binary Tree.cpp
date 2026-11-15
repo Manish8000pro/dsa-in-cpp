@@ -11,6 +11,7 @@
  * };
  */
 // Time complexity O(n); in worst case O(n.h) where h is the height of the tree
+// space complexity O(h) h is the height
 bool dfs(TreeNode* node,int val){
     if(!node){
        return true; 
