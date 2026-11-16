@@ -29,7 +29,7 @@ bool isCyclic(int V, vector<vector<int>>& edges) {
 
         while(!q.empty()){
             int node = q.front();
-            q.pop();
+            q.pop(); 
             result.push_back(node);
 
             for(int neib: adj[node]){
