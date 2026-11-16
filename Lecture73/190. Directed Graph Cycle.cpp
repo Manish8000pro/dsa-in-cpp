@@ -2,7 +2,7 @@
 bool isCyclic(int V, vector<vector<int>>& edges) {
     // kahn's algorithm  
         vector<int>adj[V];
-        vector<int>inDegree(V,0);
+        vector<int>inDegree(V,0); 
 
         // find the inDegree of each node 
 
