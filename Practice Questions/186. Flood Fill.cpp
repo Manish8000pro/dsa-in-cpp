@@ -7,6 +7,7 @@ void dfs(vector<vector<int>>& image, int r, int c, int oldColor, int newColor) {
         return;  
     }
     
+    
     image[r][c] = newColor;
     dfs(image, r + 1, c, oldColor, newColor); 
     dfs(image, r - 1, c, oldColor, newColor);
