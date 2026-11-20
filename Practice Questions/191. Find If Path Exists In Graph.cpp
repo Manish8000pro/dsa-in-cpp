@@ -1,5 +1,6 @@
 //191. Find If Path Exists In Graph
 // Time Complexity: O(V + E) where V is the number of vertices and E is the number of edges in the graph.
+// Space Complexity : O(V + E) for storing the adjacency list and O(V) for the visited array and queue.
 bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
     if (source == destination)
     return true;
