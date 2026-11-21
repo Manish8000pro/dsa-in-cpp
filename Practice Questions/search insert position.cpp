@@ -12,4 +12,4 @@ int searchInsert(vector<int>& nums, int target) {
             end = mid - 1;
     }
     return start;
-}
+} 
