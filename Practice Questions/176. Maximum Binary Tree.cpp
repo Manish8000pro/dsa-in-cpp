@@ -10,3 +10,32 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+TreeNode* construct(vector<int>&nums,int left,int right){
+    // base case
+    if(left>right){
+        return nullptr;
+    }
+
+    // Find maximum element index
+    int maxIndex = left;
+
+    for(int i = left;i<=right;i++){
+        if(nums[i]>nums[maxIndex]){
+            maxIndex = i;
+        }
+    }
+
+    // create root node
+    TreeNode* root = new TreeNode(nums[maxIndex]);
+    // Build left subTree
+    root->left = construct(nums,left,maxIndex-1);
+    // Build right subtree
+    root->right = construct(nums,maxIndex+1,right);
+
+    return root;
+}
+
+TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
+    
+    return construct(nums,0,nums.size()-1);
+}
