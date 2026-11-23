@@ -10,6 +10,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time Complexity: O(n^2) in worst case, O(nlogn) in average case
 TreeNode* construct(vector<int>&nums,int left,int right){
     // base case
     if(left>right){
