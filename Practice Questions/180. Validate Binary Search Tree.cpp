@@ -10,6 +10,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// Time complexity O(n) : in worst case O(n.h) where h is the height of the tree
 
 bool validate(TreeNode* node,long long minBound,long long maxBound){
     if(!node){
