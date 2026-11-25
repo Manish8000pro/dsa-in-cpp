@@ -10,3 +10,19 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+bool validate(TreeNode* node,long long minBound,long long maxBound){
+    if(!node){
+        return true;
+    }
+
+    if(node->val <= minBound || node->val >= maxBound){
+        return false;
+    }
+
+    return validate(node->left,minBound,node->val) && validate(node->right,node->val,maxBound);
+}
+
+bool isValidBST(TreeNode* root) {
+    return validate(root,LLONG_MIN,LLONG_MAX);
+}
