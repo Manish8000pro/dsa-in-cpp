@@ -6,7 +6,7 @@
  *     Node *right;
  *     Node(int x) : data(x), left(NULL), right(NULL) {}
  * };
- */
+ */ 
 
 class Solution {
 public:
