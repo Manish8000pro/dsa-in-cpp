@@ -9,6 +9,7 @@
  */ 
 
  // Time complexity O(n) : in worst case O(n.h) where h is the height of the tree
+ // space complexity O(h) h is the height
 
 class Solution {
 public:
