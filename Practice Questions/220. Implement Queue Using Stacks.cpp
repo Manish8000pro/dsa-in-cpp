@@ -1,6 +1,6 @@
 //220. Implement Queue Using Stacks
 // Time complexity O(n) : in worst case O(n) where n is the number of elements in the queue
-//
+// space complexity O(n) n is the number of elements in the queue
 class MyQueue {
 public:
 
