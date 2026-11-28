@@ -1,5 +1,6 @@
 // 203. Largest Rectangle in Histogram
 // Time Complexity : O(n)
+// Space Complexity : O(n)
 
 int largestRectangleArea(vector<int>& heights) {
     
